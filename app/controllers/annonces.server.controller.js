@@ -5,9 +5,22 @@ var mongoose = require('mongoose'),
 	Ville = mongoose.model('Ville'),
 	Annonceur = mongoose.model('Annonceur'),
 	Categorie = mongoose.model('Categorie');
+
+
+
+//Multer 
+var multer = require('multer');
+
+	//Dependencies
+var fs = require('fs');
+var path = require('path');
+var uid = require('uid2');
+var mime = require('mime');
+
+//Constants
+var TARGET_PATH = path.resolve('/images');
+var IMAGE_TYPES = ['image/jpeg', 'image/png'];
 	
-
-
 
 
 	var getErrorMessage = function(err){
@@ -148,3 +161,4 @@ var mongoose = require('mongoose'),
 		});
 
 	};
+

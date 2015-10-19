@@ -30,7 +30,8 @@ var config = require('./config'),
 		app.use(bodyParser.urlencoded({
 		extended: true
 	}));
-
+		
+		
 		app.use(bodyParser.json());
 		app.use(methodOverride());
 
@@ -48,6 +49,9 @@ var config = require('./config'),
 		app.use(flash());
 		app.use(passport.initialize());
 		app.use(passport.session());
+
+		
+		//app.use(express.limit('5mb'));
 
 		app.use(express.static('./public'));
 
