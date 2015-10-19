@@ -27,6 +27,7 @@ var config = require('./config'),
 
 
 		io.on('connection', function(socket){
-			//require('../app/controllers/chat.server.controller')(io, socket);
+			require('../app/controllers/chat.server.controller')(io, socket);
+			console.log('on est connecté en socket');
 		});
-	}
+	};

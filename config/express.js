@@ -1,8 +1,8 @@
 "use strict";
 
-var config = require('./config'),
-	socketio = require('socket.io'),
+var config = require('./config'),	
 	http = require('http'),
+	socketio = require('socket.io'),
 	express = require('express'),
 	morgan = require('morgan'),
 	compress =require('compression'),
@@ -17,7 +17,7 @@ var config = require('./config'),
 
 	module.exports = function(db){
 		var app = express();
-		var server = require('http').createServer(app);
+		var server = http.createServer(app);
 		var io = socketio.listen(server);
 
 
@@ -36,7 +36,7 @@ var config = require('./config'),
 
 		var mongoStore = new MongoStore({
 			db: db.connection.db
-		})
+		});
 
 		app.use(session({
 			saveUninitialized: true,
