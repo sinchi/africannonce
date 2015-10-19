@@ -56,7 +56,6 @@ module.exports = function(app){
 	app.param('annonceur_id', annonce.listAnnoncesByAnnonceurId);
 
 
-	app.route('/api/annonces/images')
-	.post(annonce.uploadMulter);
+	
 };
 

@@ -4,7 +4,12 @@ var mongoose = require('mongoose'),
 	Schema = mongoose.Schema;
 
 	var VilleSchema = new Schema({
-		nom:String
+		nom:{
+			type:String,
+			unique:true,
+			trim: true,
+			required: "Nom est obligatoire"
+		}
 	});
 
 
