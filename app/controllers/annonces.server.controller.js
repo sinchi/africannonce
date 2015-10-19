@@ -118,8 +118,7 @@ var mongoose = require('mongoose'),
 
 			return res.json(annonces);
 			
-		});
-		
+		});		
 
 	};
 
