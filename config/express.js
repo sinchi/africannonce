@@ -3,6 +3,7 @@
 var config = require('./config'),	
 	http = require('http'),
 	socketio = require('socket.io'),
+	fs = require('fs'),
 	express = require('express'),
 	morgan = require('morgan'),
 	compress =require('compression'),
@@ -11,7 +12,9 @@ var config = require('./config'),
 	session = require('express-session'),
 	MongoStore = require('connect-mongo')(session),
 	flash = require('connect-flash'),
-	passport = require('passport');
+	passport = require('passport'),
+	busboy = require('connect-busboy');
+
 
 
 
@@ -50,7 +53,20 @@ var config = require('./config'),
 		app.use(passport.initialize());
 		app.use(passport.session());
 
-		
+		app.use(express.static('public'));
+
+		app.use('/upload', busboy({immediate: true }));
+		app.use('/upload', function(request, response) {
+		  request.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+		    file.on('data', function(data){
+		      fs.writeFile('upload' + fieldname + filename, data);
+		    });
+		    file.on('end', function(){
+		      console.log('File ' + filename + ' is ended');
+		    });
+
+ 		 });
+	});		
 		//app.use(express.limit('5mb'));
 
 		app.use(express.static('./public'));
