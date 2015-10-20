@@ -4,6 +4,7 @@ var config = require('./config'),
 	http = require('http'),
 	socketio = require('socket.io'),
 	fs = require('fs'),
+	path = require('path'),
 	express = require('express'),
 	morgan = require('morgan'),
 	compress =require('compression'),
@@ -55,24 +56,50 @@ var config = require('./config'),
 
 		app.use(express.static('public'));
 
-		app.use('/upload', busboy({immediate: true }));
-		app.use('/upload', function(request, response) {
-		  request.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
-		    file.on('data', function(data){
-		      fs.writeFile('upload' + fieldname + filename, data);
-		    });
-		    file.on('end', function(){
-		      console.log('File ' + filename + ' is ended');
-		    });
-
- 		 });
-	});		
+		
 		//app.use(express.limit('5mb'));
 
-		app.use(express.static('./public'));
+	
 
 		app.set('views', './app/views');
 		app.set('view engine', 'ejs');
+
+
+		 app.use(busboy({
+		  highWaterMark: 2 * 1024 * 1024,
+		  limits: {
+		    fileSize: 10 * 1024 * 1024
+		  }
+		}));
+
+		app.use('/upload', function(req, res) {
+
+		  req.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+
+				file.on('data', function(data){
+					
+
+					var saveTo = path.join('public/images', filename);
+				      console.log('Uploading: ' + saveTo);
+				      file.pipe(fs.createWriteStream(saveTo));	
+
+				   		fs.writeFile(saveTo, data);
+				});
+
+				 file.on('end', function(){
+				     console.log('File ' + filename + ' is ended');
+
+				     return res.render('index',{
+				     	user: JSON.stringify(req.user),
+				     	title: 'upload Image',
+				     	image: filename
+				     });
+				  });
+
+ 			 });
+
+		  return req.pipe(req.busboy);
+	});		
 
 		require('../app/routes/index.server.routes.js')(app);
 		require('../app/routes/villes.server.routes.js')(app);
