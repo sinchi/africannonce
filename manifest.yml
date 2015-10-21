@@ -1,0 +1,6 @@
+applications:
+
+- name: ayoub-africannonce # Indiquez le nom de votre application sur Bluemix
+  host: ayoub-africannonce # À CHANGER - À quelle adresse retrouvera-t-on l'application ?
+  command: node server # Commande de lancement de l'application
+  memory: 128M # La mémoire dont vous avez besoin
