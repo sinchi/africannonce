@@ -55,12 +55,16 @@ var config = require('./config'),
 		app.use(passport.initialize());
 		app.use(passport.session());
 
+		
+
 
 		// ... Middleware 
 		app.use('/shared', serveIndex(
 			path.join('public','shared'),
 			{'icons': true}
 		));
+	
+
 
 		app.use(express.static('public'));
 

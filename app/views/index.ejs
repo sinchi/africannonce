@@ -6,6 +6,11 @@
 	<link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
+		<!-- Display flash messages  -->
+	<% for(var i in messages) { %>
+	   	<p class="bg-danger"><%= messages[i] %></p>
+	<% } %>
+
 	<!-- Render AngularJS views  -->
 	Hello <%= title%>
 

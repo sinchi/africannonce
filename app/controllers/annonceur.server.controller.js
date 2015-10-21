@@ -123,7 +123,7 @@ exports.delete = function(req, res){
 
 exports.requireLogin = function(req, res, next){
 	if(!req.isAuthenticated()){
-		return res.status(400).send({message: "User is not login "})
+		return res.status(400).send({message: "User is not log-in "})
 	}
 
 	console.log('yes he is login ');
@@ -224,4 +224,17 @@ exports.signup = function(req, res, next) {
 	} else {
 		return res.redirect('/');
 	}
+};
+
+
+exports.uploadFile = function(req, res){
+	console.log(req.body) // form fields
+	console.log(req.file) // form files
+	// res.status(204).end();		   
+    return res.render('index',{
+		user: JSON.stringify(req.user),
+		title: 'upload Image',
+		image: (typeof req.file == 'undefined' ) ? req.flash('error', "veuillez selectionner le fichier à uploader!") : req.file.filename ,
+		messages: req.flash('error')
+	});
 };

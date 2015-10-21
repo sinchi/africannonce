@@ -1,7 +1,17 @@
 'use strict';
 
-var annonceur = require('../controllers/annonceur.server.controller.js');
-var passport = require('passport');
+var annonceur = require('../controllers/annonceur.server.controller.js'),
+ passport = require('passport'),
+ multer  = require('multer'),
+ storage = multer.diskStorage({
+			  destination: function (req, file, cb) {
+			    cb(null, 'public/shared')
+			  },
+			  filename: function (req, file, cb) {
+			    cb(null, file.originalname)
+			  }
+	}),
+	upload = multer({ storage: storage });
 
 module.exports = function(app){
 
@@ -28,6 +38,10 @@ module.exports = function(app){
 
 	   app.route('/api/annonceurs/signout').
 	  get(annonceur.signout);
+
+
+	  // accept one file where the name of the form field is named photho
+	app.post('/upload', annonceur.requireLogin , upload.single('sampleFile'), annonceur.uploadFile);
 
 
 };

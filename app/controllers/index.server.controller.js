@@ -8,21 +8,13 @@ exports.render = function(req, res) {
 	res.render('index', {
 		title: 'Hello World',
 		image: '',
-		user: JSON.stringify(req.user)
+		user: JSON.stringify(req.user),
+		messages : req.flash('error') || req.flash('info')
 	});
 };
 
 
-exports.uploadFile = function(req, res){
-		    console.log(req.body) // form fields
-		    console.log(req.file) // form files
-		   // res.status(204).end();
-		    return res.render('index',{
-							     	user: JSON.stringify(req.user),
-							     	title: 'upload Image',
-							     	image: req.file.filename
-							     });
-		};
+
 
 
 

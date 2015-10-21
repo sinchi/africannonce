@@ -1,15 +1,6 @@
 // Invoke 'strict' JavaScript mode
 'use strict';
-var multer  = require('multer'),
-	storage = multer.diskStorage({
-			  destination: function (req, file, cb) {
-			    cb(null, 'public/shared')
-			  },
-			  filename: function (req, file, cb) {
-			    cb(null, file.originalname)
-			  }
-	}),
-	upload = multer({ storage: storage });
+
 
 // Define the routes module' method
 module.exports = function(app) {
@@ -21,7 +12,6 @@ module.exports = function(app) {
 	app.get('/', index.render);
 
 
-	// accept one file where the name of the form field is named photho
-	app.post('/upload', upload.single('sampleFile'), index.uploadFile);
+	
 	
 };
