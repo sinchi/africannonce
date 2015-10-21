@@ -13,7 +13,16 @@ exports.render = function(req, res) {
 };
 
 
-
+exports.uploadFile = function(req, res){
+		    console.log(req.body) // form fields
+		    console.log(req.file) // form files
+		   // res.status(204).end();
+		    return res.render('index',{
+							     	user: JSON.stringify(req.user),
+							     	title: 'upload Image',
+							     	image: req.file.filename
+							     });
+		};
 
 
 

@@ -15,11 +15,9 @@ var config = require('./config'),
 	flash = require('connect-flash'),
 	passport = require('passport'),
 	busboy = require('connect-busboy'),
-	multer  = require('multer'),
-	upload = multer({ dest: 'public/images' });
 	
-
-
+	// pour server les documents partagées
+	serveIndex = require('serve-index');
 
 
 	module.exports = function(db){
@@ -57,27 +55,19 @@ var config = require('./config'),
 		app.use(passport.initialize());
 		app.use(passport.session());
 
+
+		// ... Middleware 
+		app.use('/shared', serveIndex(
+			path.join('public','shared'),
+			{'icons': true}
+		));
+
 		app.use(express.static('public'));
-
-		
-		//app.use(express.limit('5mb'));
-
-	
 
 		app.set('views', './app/views');
 		app.set('view engine', 'ejs');
 
-		// accept one file where the name of the form field is named photho
-		app.post('/upload', upload.single('sampleFile'), function(req, res){
-		    console.log(req.body) // form fields
-		    console.log(req.file) // form files
-		   // res.status(204).end();
-		    return res.render('index',{
-							     	user: JSON.stringify(req.user),
-							     	title: 'upload Image',
-							     	image: req.file.filename
-							     });
-		});
+		
 			
 
 		/* app.use(busboy({
