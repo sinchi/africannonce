@@ -14,7 +14,10 @@ var config = require('./config'),
 	MongoStore = require('connect-mongo')(session),
 	flash = require('connect-flash'),
 	passport = require('passport'),
-	busboy = require('connect-busboy');
+	busboy = require('connect-busboy'),
+	multer  = require('multer'),
+	upload = multer({ dest: 'public/images' });
+	
 
 
 
@@ -64,42 +67,56 @@ var config = require('./config'),
 		app.set('views', './app/views');
 		app.set('view engine', 'ejs');
 
+		// accept one file where the name of the form field is named photho
+		app.post('/upload', upload.single('sampleFile'), function(req, res){
+		    console.log(req.body) // form fields
+		    console.log(req.file) // form files
+		   // res.status(204).end();
+		    return res.render('index',{
+							     	user: JSON.stringify(req.user),
+							     	title: 'upload Image',
+							     	image: req.file.filename
+							     });
+		});
+			
 
-		 app.use(busboy({
+		/* app.use(busboy({
+		 	immediate: true ,
 		  highWaterMark: 2 * 1024 * 1024,
 		  limits: {
 		    fileSize: 10 * 1024 * 1024
 		  }
 		}));
 
-		app.use('/upload', function(req, res) {
 
-		  req.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+		 app.use('/upload', function(request, response) {
+			  request.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
+			    file.on('data', function(data){
+			    	var saveTo = path.join('public/images', filename);
+							      console.log('Uploading: ' + saveTo);
+							      file.pipe(fs.createWriteStream(saveTo));	
+							      request.filename = filename;
+			      fs.writeFile(filename, data);
+			    });
+			    file.on('end', function(){
+			      console.log('File ' + filename + ' is ended');
+			    });
 
-				file.on('data', function(data){
-					
+			  });
+			 request.busboy.on('finish', function(){
+			 	console.log('path' + path.join('public/images', request.filename));
+			 	  return response.render('index',{
+							     	user: JSON.stringify(request.user),
+							     	title: 'upload Image',
+							     	image: request.filename
+							     });
+			 //response.status(200).send('Busboy is finished and image is uploaded');
+			  //  console.log('Busboy is finished');
+			  // response.status(201).end();
+			 });
+		});*/
 
-					var saveTo = path.join('public/images', filename);
-				      console.log('Uploading: ' + saveTo);
-				      file.pipe(fs.createWriteStream(saveTo));	
-
-				   		fs.writeFile(saveTo, data);
-				});
-
-				 file.on('end', function(){
-				     console.log('File ' + filename + ' is ended');
-
-				     return res.render('index',{
-				     	user: JSON.stringify(req.user),
-				     	title: 'upload Image',
-				     	image: filename
-				     });
-				  });
-
- 			 });
-
-		  return req.pipe(req.busboy);
-	});		
+				
 
 		require('../app/routes/index.server.routes.js')(app);
 		require('../app/routes/villes.server.routes.js')(app);
