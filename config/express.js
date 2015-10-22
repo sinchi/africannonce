@@ -2,9 +2,7 @@
 
 var config = require('./config'),	
 	http = require('http'),
-	socketio = require('socket.io'),
-	fs = require('fs'),
-	path = require('path'),
+	socketio = require('socket.io'),	
 	express = require('express'),
 	morgan = require('morgan'),
 	compress =require('compression'),
@@ -14,6 +12,8 @@ var config = require('./config'),
 	MongoStore = require('connect-mongo')(session),
 	flash = require('connect-flash'),
 	passport = require('passport'),
+	fs = require('fs'),
+	path = require('path'),
 	busboy = require('connect-busboy'),
 	
 	// pour server les documents partagées
@@ -26,7 +26,7 @@ var config = require('./config'),
 		var io = socketio.listen(server);
 
 
-		if(process.env.NODE_ENV === 'developement'){
+		if(process.env.NODE_ENV === 'development'){
 			app.use(morgan('dev'));
 		}else if(process.env.NODE_ENV === 'production'){
 			app.use(compress());
@@ -51,6 +51,10 @@ var config = require('./config'),
 			store: mongoStore
 		}));
 
+
+		app.set('views', './app/views');
+		app.set('view engine', 'ejs');
+
 		app.use(flash());
 		app.use(passport.initialize());
 		app.use(passport.session());
@@ -58,59 +62,9 @@ var config = require('./config'),
 		
 
 
-		// ... Middleware 
-		app.use('/shared', serveIndex(
-			path.join('public','shared'),
-			{'icons': true}
-		));
-	
-
-
-		app.use(express.static('public'));
-
-		app.set('views', './app/views');
-		app.set('view engine', 'ejs');
-
 		
-			
-
-		/* app.use(busboy({
-		 	immediate: true ,
-		  highWaterMark: 2 * 1024 * 1024,
-		  limits: {
-		    fileSize: 10 * 1024 * 1024
-		  }
-		}));
-
-
-		 app.use('/upload', function(request, response) {
-			  request.busboy.on('file', function(fieldname, file, filename, encoding, mimetype) {
-			    file.on('data', function(data){
-			    	var saveTo = path.join('public/images', filename);
-							      console.log('Uploading: ' + saveTo);
-							      file.pipe(fs.createWriteStream(saveTo));	
-							      request.filename = filename;
-			      fs.writeFile(filename, data);
-			    });
-			    file.on('end', function(){
-			      console.log('File ' + filename + ' is ended');
-			    });
-
-			  });
-			 request.busboy.on('finish', function(){
-			 	console.log('path' + path.join('public/images', request.filename));
-			 	  return response.render('index',{
-							     	user: JSON.stringify(request.user),
-							     	title: 'upload Image',
-							     	image: request.filename
-							     });
-			 //response.status(200).send('Busboy is finished and image is uploaded');
-			  //  console.log('Busboy is finished');
-			  // response.status(201).end();
-			 });
-		});*/
-
-				
+	
+	
 
 		require('../app/routes/index.server.routes.js')(app);
 		require('../app/routes/villes.server.routes.js')(app);
@@ -119,7 +73,18 @@ var config = require('./config'),
 		require('../app/routes/annonceur.server.routes.js')(app);
 		require('../app/routes/commentaires.server.routes.js')(app);
 
+
+			app.use(express.static('public'));
+
+			// ... Middleware 
+		app.use('/shared', serveIndex(
+			path.join('public','shared'),
+			{'icons': true}
+		));
+
+
 		require('./socketio.js')(server, io, mongoStore);
+
 
 
 		return server;

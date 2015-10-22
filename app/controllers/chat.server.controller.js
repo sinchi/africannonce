@@ -1,8 +1,9 @@
 // Invoke 'strict' JavaScript mode
 'use strict';
-
+var mongoose = require('mongoose'),
+ Commentaire = mongoose.model('Commentaire');
 // Create the chat configuration
-module.exports = function(io, socket) {
+module.exports = function(io, socket) {   
 	// Emit the status event when a new socket client is connected
     io.emit('chatMessage', {
         type: 'status',
@@ -30,4 +31,15 @@ module.exports = function(io, socket) {
             username: socket.request.user.username
         });
     });
+
+    socket.on('commentaire', function(commentaire){
+        var commentaire = new Commentaire(commentaire);    
+        commentaire.save(function(err){
+            if(err) 
+                socket.emit('error', err);
+             socket.emit('commentaireCreated', commentaire);
+        });
+    });
+
+    console.log('je suis dans la chat controller socket');
 };

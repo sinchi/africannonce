@@ -1,6 +1,6 @@
 "user strict";
 
- process.env.NODE_ENV = process.env.NODE_ENV || 'developement';
+ process.env.NODE_ENV = process.env.NODE_ENV || 'development';
 
 
 
@@ -16,7 +16,7 @@ var	express = require('./config/express'),
 
 		app.listen(3000);
 
-		console.log('server is started att http://localhost:3000');
+		console.log('server is started at http://localhost:3000');
 
 		module.exports = app;
 	
