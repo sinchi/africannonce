@@ -56,6 +56,13 @@ module.exports = function(app){
 	app.param('annonceur_id', annonce.listAnnoncesByAnnonceurId);
 
 
+	app.route('/api/categories/:id_categorie/villes/:villeId/annonces')
+	.get(annonce.annoncesByVille);
+
+	
+
+	
+
 	
 };
 

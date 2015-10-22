@@ -59,7 +59,7 @@ exports.create = function(req, res, next){
 				console.log('errors' + err);
 
 				// Redirect the user back to the signup page
-				return res.redirect('api/annonceurs/signup');
+				return res.redirect('/api/annonceurs/signup');
 			}
 
 			// If the user was created successfully use the Passport 'login' method to login

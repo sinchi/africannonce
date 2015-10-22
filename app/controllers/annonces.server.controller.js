@@ -146,3 +146,17 @@ var mongoose = require('mongoose'),
 
 	};
 
+
+
+	exports.annoncesByVille = function(req, res){
+		console.log(req.ville);
+	console.log(req.categorie);	
+		Annonce.find({ville: req.ville._id , categorie: req.categorie._id}).sort('-date_publication').populate('ville categorie annonceur').exec(function(err, annonces){
+			if(err) return next(err);
+			if(!annonces) return next(new Error('Failed to load annonces by '+ ville_id));
+			//req.annonces = annonces;
+			return res.json(annonces);
+			
+			//next();
+		});		
+	};
