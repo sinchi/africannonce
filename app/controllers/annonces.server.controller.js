@@ -41,8 +41,8 @@ var mongoose = require('mongoose'),
 	exports.annonceById = function(req, res, next, id){
 		Annonce.findById(id).populate('ville annonceur').exec(function(err, annonce){
 			if(err) return next(err);
-			if(!annonce) return next(new Error('Failed to load annonce '+ id));
-			req.session.annonce = annonce;
+			if(!annonce) return next(new Error('cette annonce avec id : '+ id + ' n\'existe pas'));
+			req.annonce = annonce;
 
 			next();
 		});
@@ -88,7 +88,7 @@ var mongoose = require('mongoose'),
 	};
 
 	exports.read =  function(req, res){
-		 res.json(req.session.annonce);
+		 res.json(req.annonce);
 	};
 
 	exports.list = function(req, res){

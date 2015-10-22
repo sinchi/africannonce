@@ -4,7 +4,7 @@ var config = require('./config'),
 	cookieParser = require('cookie-parser'),
 	passport = require('passport');
 
-	module.exports = function(server, io, mongoStore){
+	module.exports = function(app, server, io, mongoStore){
 		io.use(function(socket, next){
 			cookieParser(config.sessionSecret)(socket.request, {}, function(err){
 				var sessionId = socket.request.signedCookies['connect.sid'];
@@ -27,7 +27,9 @@ var config = require('./config'),
 
 
 		io.on('connection', function(socket){
-			require('../app/controllers/chat.server.controller')(io, socket);
+			require('../app/sockets/chat.server.socket')(io, socket);
+			require('../app/sockets/commentaires.server.socket')(io, socket, app);
+
 		});
 
 

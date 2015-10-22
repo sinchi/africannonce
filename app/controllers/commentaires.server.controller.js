@@ -25,7 +25,7 @@ var mongoose = require('mongoose'),
 
 	exports.list = function(req, res, next){
 
-		Commentaire.find().populate('annonce createur').exec(function(err, commentaires){
+		Commentaire.find({annonce: req.annonce._id}).populate('annonce createur').exec(function(err, commentaires){
 
 			if(err) return res.status(400).send({message: getErrorMessage(err)});
 
@@ -42,12 +42,8 @@ var mongoose = require('mongoose'),
 		var commentaire = new Commentaire();
 		commentaire.titre = req.body.titre;
 		commentaire.texte = req.body.texte;
-		commentaire.annonce = req.session.annonce._id;
+		commentaire.annonce = req.annonce._id;
 		commentaire.createur = req.user;
-
-		console.log('Annonce '+req.session.annonce._id);
-		console.log('Annonceur '+req.user);
-
 
 
 		commentaire.save(function(err){

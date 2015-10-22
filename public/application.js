@@ -9,26 +9,32 @@ angular.element(document).ready(function(){
 		var socket = io();
 		var that = this;
 		that.message = '';
-		socket.on('chatMessage', function(message){
-			message.type ="message";
-			console.log('reception de message depuis le serveur '+JSON.stringify(message));		
-			
-			var commentaire = {
-				titre: 'bonne occasion',
-				texte: 'hamza o achmen hamza hadi o bech7al ??',
-				annonce: '5624e77b0771cb0b0a83a976',
-				createur: '5624e4ef0771cb0b0a83a972'
+
+		socket.on('chatMessage', function(message){			
+			console.log('reception de message depuis le serveur '+JSON.stringify(message));								
+		});
+
+		var commentaire = {
+				titre: 'bghit nssowlek',
+				texte: 'ch7al taman',
+				annonce: '5627cca305c03f5830f8448d',
+				createur: '562368c96f636ef10dc3f9ae'
 			};
 
 			socket.emit('commentaire', commentaire);
+		
 
+		socket.on('allComments', function(comments){
+			console.log('allcomment by annonceID: 5627cca305c03f5830f8448d '+ JSON.stringify(comments));
 		});
+
 
 
 		socket.on('commentaireCreated', function(commentaire){
 			console.log(JSON.stringify(commentaire));
 		});
 
+		socket.emit('annonceID', '5627cca305c03f5830f8448d');
 
 
 

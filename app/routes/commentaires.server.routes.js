@@ -7,7 +7,7 @@ var commentaire = require('../controllers/commentaires.server.controller.js');
 
 module.exports =function(app){
 
-	app.route('/api/commentaires')
+	app.route('/api/annonces/:annonceId/commentaires')
 	.get(commentaire.list)
 	.post(annonceur.requireLogin , commentaire.create);
 

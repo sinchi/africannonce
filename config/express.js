@@ -15,6 +15,10 @@ var config = require('./config'),
 	fs = require('fs'),
 	path = require('path'),
 	busboy = require('connect-busboy'),
+	errorhandler = require('errorhandler'),
+	helmet = require('helmet'),
+	validator = require('express-validator'),
+	expressDomain = require('express-domain-middleware'),
 	
 	// pour server les documents partagées
 	serveIndex = require('serve-index');
@@ -26,8 +30,13 @@ var config = require('./config'),
 		var io = socketio.listen(server);
 
 
+		app.use(helmet());
+		app.use(expressDomain);
+
 		if(process.env.NODE_ENV === 'development'){
 			app.use(morgan('dev'));
+			app.use(errorhandler());
+
 		}else if(process.env.NODE_ENV === 'production'){
 			app.use(compress());
 		}
@@ -39,6 +48,7 @@ var config = require('./config'),
 		
 		app.use(bodyParser.json());
 		app.use(methodOverride());
+		app.use(validator());
 
 		var mongoStore = new MongoStore({
 			db: db.connection.db
@@ -59,12 +69,6 @@ var config = require('./config'),
 		app.use(passport.initialize());
 		app.use(passport.session());
 
-		
-
-
-		
-	
-	
 
 		require('../app/routes/index.server.routes.js')(app);
 		require('../app/routes/villes.server.routes.js')(app);
@@ -83,7 +87,7 @@ var config = require('./config'),
 		));
 
 
-		require('./socketio.js')(server, io, mongoStore);
+		require('./socketio.js')(app,server, io, mongoStore);
 
 
 
