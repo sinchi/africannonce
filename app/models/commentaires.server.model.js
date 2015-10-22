@@ -7,7 +7,12 @@ var mongoose= require('mongoose'),
 
 	var CommentaireSchema = new Schema({
 
-		titre: String,
+		titre: {
+			type:String,
+			unique: true,
+			trim: true,
+			required: "Titre est obligatoire"
+		},
 		texte: String,
 		
 		annonce:{
