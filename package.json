@@ -2,6 +2,7 @@
   "name": "AFRIQUE_ANNONCE",
   "version": "0.0.9",
   "dependencies": {
+    "async": "^1.5.0",
     "body-parser": "~1.8.0",
     "compression": "~1.0.11",
     "connect-busboy": "0.0.2",

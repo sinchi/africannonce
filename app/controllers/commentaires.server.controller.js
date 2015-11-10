@@ -4,7 +4,8 @@ var mongoose = require('mongoose'),
 	Annonceur = mongoose.model('Annonceur'),
 	Annonce = mongoose.model('Annonce'),
 	Commentaire = mongoose.model('Commentaire'),
-	Notification = mongoose.model('Notification');
+	Notification = mongoose.model('Notification'),
+	async = require('async');
 
 
 	var getErrorMessage = function(err){
@@ -46,27 +47,26 @@ var mongoose = require('mongoose'),
 		commentaire.annonce = req.annonce._id;
 		commentaire.createur = req.user;
 
-		
-
-
 		commentaire.save(function(err){
 			if(err) return res.status(400).send({message: getErrorMessage(err)});			
-				
-		//	console.log('saveNotification');
-		var notification = new Notification();
+						
 		// selectionner tous les  annonceurs qui sont commentés sur cette annonce (req.annonce_id)
 		Commentaire.getCommentairesByAnnonceId(req.annonce._id, function(commentaires){
-		//	console.log('taille de commentaires '+ commentaires);
-			for(var i=0; i< commentaires.length; i++){
-				
-				notification.annonceur = commentaires[i].createur._id;
-				notification.commentaire = commentaires[i]._id;			
-
+			console.log('taille de commentaires '+ commentaires.length);
+			
+			async.each(commentaires, function(commentaire, callback){
+				console.log('commentaire = '+ commentaire);
+				var notification = new Notification();
+				notification.annonceur = commentaire.createur._id;
+				notification.commentaire = commentaire._id;			
 				notification.save(function(err){
-					if(err) console.log('err saveNotification : ' + err);						
-					console.log('notification : '+ notification);
+					console.log('notification: '+ notification);
+					notification = null;					
+					callback();
 				});
-			}
+			});
+
+			
 		});
 	
 
