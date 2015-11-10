@@ -2,7 +2,8 @@
 
 var mongoose = require('mongoose'),
 	Annonceur = mongoose.model('Annonceur'),
-	Ville = mongoose.model('Ville');
+	Ville = mongoose.model('Ville'),
+	Notification = mongoose.model('Notification');
 
 
 	var getErrorMessage = function(err){
@@ -238,3 +239,12 @@ exports.uploadFile = function(req, res){
 		messages: req.flash('error')
 	});
 };
+
+exports.listNotifications = function(req, res){
+		Notification.find().populate('commentaire annonceur').exec(function(err, notifications){
+			if(!err){
+				return res.json(notifications);
+			}else
+				return res.status(400).send({message : getErrorMessage(err)});
+		});
+	};

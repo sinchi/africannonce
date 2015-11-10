@@ -50,7 +50,7 @@ var mongoose = require('mongoose'),
 		commentaire.save(function(err){
 			if(err) return res.status(400).send({message: getErrorMessage(err)});			
 						
-		// selectionner tous les  annonceurs qui sont commentés sur cette annonce (req.annonce_id)
+		// selectionner tous les  annonceurs qui ont commentés sur cette annonce (req.annonce_id)
 		Commentaire.getCommentairesByAnnonceId(req.annonce._id, function(commentaires){
 			console.log('taille de commentaires '+ commentaires.length);
 			
@@ -68,13 +68,9 @@ var mongoose = require('mongoose'),
 				}
 				
 			});
-
 			
 		});
 	
-
-
-
 			return res.json(commentaire);
 		});
 

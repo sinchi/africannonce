@@ -1,6 +1,6 @@
 'use strict';
 
-var annonceur = require('../controllers/annonceur.server.controller.js'),
+var annonceur = require('../controllers/annonceur.server.controller.js'),	
  passport = require('passport'),
  multer  = require('multer'),
  storage = multer.diskStorage({
@@ -33,7 +33,9 @@ module.exports = function(app){
 				failureRedirect: '/api/annonceurs/signin',
 				failureFlash: true
 		   }));
-	   
+		
+	   app.route('/api/annonceurs/notifications')
+	   .get(annonceur.requireLogin, annonceur.listNotifications);
 	   
 
 	   app.route('/api/annonceurs/signout').
