@@ -57,13 +57,16 @@ var mongoose = require('mongoose'),
 			async.each(commentaires, function(commentaire, callback){
 				console.log('commentaire = '+ commentaire);
 				var notification = new Notification();
-				notification.annonceur = commentaire.createur._id;
-				notification.commentaire = commentaire._id;			
-				notification.save(function(err){
-					console.log('notification: '+ notification);
-					notification = null;					
-					callback();
-				});
+				if(commentaire.createur._id != req.user._id){
+					notification.annonceur = commentaire.createur._id;
+					notification.commentaire = commentaire._id;			
+					notification.save(function(err){
+						console.log('notification: '+ notification);
+						notification = null;					
+						callback();
+					});
+				}
+				
 			});
 
 			

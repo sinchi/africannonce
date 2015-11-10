@@ -1,9 +1,9 @@
 // Invoke 'strict' JavaScript mode
 'use strict';
 var mongoose = require('mongoose'),
+	domain = require('domain'),
  Commentaire = mongoose.model('Commentaire');
-
- var domain = require('domain');
+ 
 // Create the chat configuration
 module.exports = function(io, socket, app) {   
 
