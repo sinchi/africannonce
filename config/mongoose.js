@@ -12,6 +12,7 @@ var config = require('./config'),
 		require('../app/models/ville.server.model.js');
 		require('../app/models/categories.server.model.js');
 		require('../app/models/commentaires.server.model.js');
+		require('../app/models/notifications.server.model.js');
 
 		return db;
 	};

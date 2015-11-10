@@ -13,7 +13,7 @@ module.exports = function(io, socket, app) {
 
 
         var d = domain.create();
-		d.on('error', function (error) {
+			d.on('error', function (error) {
 			console.error(error.stack);
 			d.exit()
 			socket.emit('commentaireCreated', {'Custom Error': error.message});

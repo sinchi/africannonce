@@ -7,9 +7,7 @@ var mongoose= require('mongoose'),
 
 	var CommentaireSchema = new Schema({
 
-		titre: {
-			type:String			
-		},
+		titre: String,
 		texte: String,
 		
 		annonce:{
@@ -30,6 +28,22 @@ var mongoose= require('mongoose'),
 
 
 	});
+
+
+	CommentaireSchema.statics.getCommentairesByAnnonceId = function(annonce_id, callback){
+
+		var _this = this;
+
+		_this.find({
+			annonce: annonce_id
+		}).populate('annonce createur').exec(function(err, commentaires){
+			//console.log('in CommentaireSchema.statics:commentaires' + commentaires);
+			if(!err)
+				return callback(commentaires);
+			else
+				return callback({message: err});
+		});
+	};
 
 
 	mongoose.model('Commentaire', CommentaireSchema);

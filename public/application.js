@@ -15,17 +15,17 @@ angular.element(document).ready(function(){
 		});
 
 		var commentaire = {
-				titre: 'bghit nssowlek',
-				texte: 'ch7al taman',
-				annonce: '5627cca305c03f5830f8448d',
-				createur: '562368c96f636ef10dc3f9ae'
+				titre: 'reponde moi',
+				texte: 'hadak s6',
+				annonce: '5624e77b0771cb0b0a83a976',
+				createur: '5624e4ef0771cb0b0a83a972'
 			};
 
 			socket.emit('commentaire', commentaire);
 		
 
 		socket.on('allComments', function(comments){
-			console.log('allcomment by annonceID: 5627cca305c03f5830f8448d '+ JSON.stringify(comments));
+			console.log('allcomment by annonceID: 562a0bd997ed7adb10a014a2 '+ JSON.stringify(comments));
 		});
 
 
@@ -34,7 +34,7 @@ angular.element(document).ready(function(){
 			console.log(JSON.stringify(commentaire));
 		});
 
-		socket.emit('annonceID', '5627cca305c03f5830f8448d');
+		socket.emit('annonceID', '562a0bd997ed7adb10a014a2');
 
 
 
