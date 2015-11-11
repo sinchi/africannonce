@@ -8,7 +8,7 @@ var annonceur = require('../controllers/annonceur.server.controller.js'),
 			    cb(null, 'public/shared')
 			  },
 			  filename: function (req, file, cb) {
-			    cb(null, req.user._id+';'+file.originalname)
+			    cb(null, file.originalname)
 			  }
 	}),
 	upload = multer({ storage: storage });
@@ -47,7 +47,7 @@ module.exports = function(app){
 
 
 	  // accept one file where the name of the form field is named photho
-	app.post('/upload', annonceur.requireLogin , upload.single('sampleFile'), annonceur.uploadFile);
+	app.post('/upload' , upload.single('file'), annonceur.uploadFile);
 
 
 };

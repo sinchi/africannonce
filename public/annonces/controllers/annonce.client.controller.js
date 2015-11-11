@@ -1,5 +1,5 @@
-angular.module('annonce').controller('AnnonceController', ['$scope', '$http', '$location', '$window','Authentification',
- function($scope, $http, $location, $window, Authentification){
+angular.module('annonce').controller('AnnonceController', ['$scope', '$http', '$location', '$window','Authentification','$state',
+ function($scope, $http, $location, $window, Authentification, $state){
 		
 	
  	$scope.authentification = Authentification;
@@ -24,7 +24,7 @@ $http(req).then(function(response){
 	$scope.authentification.user = JSON.stringify(response.data);
 
 	
-	$location.path('/');
+	$state.go('home');
 	
 	
 

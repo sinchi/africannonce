@@ -1,0 +1,48 @@
+<h1>Home</h1>
+<section>
+		<input type="text" id="text1" ng-model="name">
+		<input type="text" id="text2" ng-model="name">
+</section>
+
+	 <form encType="multipart/form-data" action="/upload" method="post">
+                <input type="file" name="sampleFile" ng-model="name"/>                
+                <input class="btn btn-large btn-green float-right" type='submit' value='Upload!' />
+                <a class="btn btn-default" href="/shared" role="button" >open directory</a>
+        </form>    
+        <img src="/shared/<%= image %>" alt='me' ng-model="name"/>
+
+
+          Upload on form submit or button click
+        <form name="form">
+          Single Image with validations
+          <input type="file" ngf-select ng-model="picFile" name="file"    
+             accept="image/*" ngf-max-size="2MB" required>
+             <button ng-click="uploadPic(picFile)">Submit</button>
+
+               <span class="progress" ng-show="picFile.progress >= 0">
+        <div style="width:{{picFile.progress}}%" 
+            ng-bind="picFile.progress + '%'"></div>
+      </span>
+
+      <h4>Upload on file select</h4>
+          <button ngf-select="uploadFiles($files, $invalidFiles)" multiple
+                  accept="image/*" ngf-max-height="5000" ngf-max-size="5MB">
+              Select Files</button>
+          <br><br>
+          Files:
+          <ul>
+            <li ng-repeat="f in files" style="font:smaller">{{f.name}} {{f.$errorParam}}
+              <span class="progress" ng-show="f.progress >= 0">
+                <div style="width:{{f.progress}}%"  
+                    ng-bind="f.progress + '%'"></div>
+              </span>
+            </li>
+            <li ng-repeat="f in errFiles" style="font:smaller">{{f.name}} {{f.$error}} {{f.$errorParam}}
+            </li> 
+          </ul>
+          {{errorMsg}}
+
+
+        </form>
+
+

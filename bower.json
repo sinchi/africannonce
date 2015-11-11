@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "dependencies": {
     "angular": "~1.2",
-    "bootstrap": "~3.3.5"
+    "bootstrap": "~3.3.5",
+    "angular-ui-router": "~0.2.15",
+    "angular-file-upload": "~2.2.0",
+    "ng-file-upload-shim": "~10.0.2"
   }
 }

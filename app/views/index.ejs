@@ -5,50 +5,17 @@
 	<title><%= title %></title>
 	<link rel="stylesheet" type="text/css" href="/lib/bootstrap/dist/css/bootstrap.css">
 </head>
-<body>
-		<!-- Display flash messages  -->
-	<% for(var i in messages) { %>
-	   	<p class="bg-danger"><%= messages[i] %></p>
-	<% } %>
-
-	<!-- Render AngularJS views  -->
-	Hello <%= title%>
-
-	<% if(!user){ %>
-		<a href="/api/annonceurs/signin">Singin</a>
-		<a href="/api/annonceurs/signup">Sinup</a>
-	<%}else{%>
-		bienvenue <%= user.nom %>
-		<a href="/api/annonceurs/signout">Sign-out</a>
-	<% } %>
-	
-
-	<!-- Render the user object -->
-	<script type="text/javascript">
-		window.user = <%- user || 'null' %>;
-
-	</script>
-	<section>
-		<input type="text" id="text1" ng-model="name">
-		<input type="text" id="text2" ng-model="name">
-	</section>
-
-	 <form ref='uploadForm' 
-            id='uploadForm' 
-            action='/upload' 
-            method='post' 
-            encType="multipart/form-data">
-                <input type="file" name="sampleFile" />                
-                <input class="btn btn-large btn-green float-right" type='submit' value='Upload!' />
-                <a class="btn btn-default" href="/shared" role="button">open directory</a>
-        </form>    
-        <img src="/shared/<%= image %>" alt='me' ng-model="name"/>
+<body>		
 		
-	
+	<div ui-view></div>
 	
 	<!-- Load the Socket.io client -->	
 	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
 	<script type="text/javascript" src="/lib/angular/angular.js"></script>
+	<script type="text/javascript" src="/lib/angular-ui-router/release/angular-ui-router.js"></script>
+	<!-- shim is needed to support non-HTML5 FormData browsers (IE8-9)-->
+	<script src="/lib/ng-file-upload-shim/ng-file-upload-shim.min.js"></script>
+	<script src="/lib/ng-file-upload/ng-file-upload.min.js"></script>
 	<script type="text/javascript" src="/application.js"></script>
 
 	

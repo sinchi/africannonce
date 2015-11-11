@@ -27,6 +27,7 @@ var mongoose = require('mongoose'),
 		annonce.annonceur = req.user;	
 		annonce.ville = req.body.ville;	
 		annonce.categorie = req.body.categorie;
+		
 		//console.log("annonce "+ annonce);
 		annonce.save(function(err){
 			if(err){
