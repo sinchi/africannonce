@@ -53,7 +53,10 @@ var mongoose = require('mongoose'),
 		// selectionner tous les  annonceurs qui ont commentés sur cette annonce (req.annonce_id)
 		Commentaire.getCommentairesByAnnonceId(req.annonce._id, function(commentaires){
 			console.log('taille de commentaires '+ commentaires.length);
+
+			var notifications =[];
 			
+			// Génerer et enregistrer les notifications pour les annonceurs qui sont commentés sur cette annonce
 			async.each(commentaires, function(commentaire, callback){
 				console.log('commentaire = '+ commentaire);
 				var notification = new Notification();
@@ -62,15 +65,18 @@ var mongoose = require('mongoose'),
 					notification.commentaire = commentaire._id;			
 					notification.save(function(err){
 						console.log('notification: '+ notification);
+						notifications.push(notification);
 						notification = null;					
 						callback();
 					});
 				}
 				
 			});
+
+			//io.broadcast().emit('notifications', notifications);
 			
 		});
-	
+			//io.emit('commentaire', commentaire);
 			return res.json(commentaire);
 		});
 
