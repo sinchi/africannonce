@@ -8,7 +8,7 @@ var annonceur = require('../controllers/annonceur.server.controller.js'),
 			    cb(null, 'public/shared')
 			  },
 			  filename: function (req, file, cb) {
-			    cb(null, file.originalname)
+			    cb(null, req.user._id+';'+file.originalname)
 			  }
 	}),
 	upload = multer({ storage: storage });
@@ -35,11 +35,15 @@ module.exports = function(app){
 		   }));
 		
 	   app.route('/api/annonceurs/notifications')
-	   .get(annonceur.requireLogin, annonceur.listNotifications);
+	   .get(annonceur.requireLogin ,annonceur.listNotifications);
 	   
 
 	   app.route('/api/annonceurs/signout').
 	  get(annonceur.signout);
+
+	  app.route('/api/annonceurs/:annonceur_id')
+	  .get(annonceur.requireLogin , annonceur.read);
+	  app.param(':annonceur_id', annonceur.getAnnonceurById);
 
 
 	  // accept one file where the name of the form field is named photho

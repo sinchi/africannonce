@@ -228,23 +228,41 @@ exports.signup = function(req, res, next) {
 };
 
 
+
 exports.uploadFile = function(req, res){
-	console.log(req.body) // form fields
-	console.log(req.file) // form files
-	// res.status(204).end();		   
+	/*console.log(" req.body :"+req.body) // form fields
+	console.log("req.file : "+req.file) // form files*/
+	// res.status(204).end();		
+
+	console.log("file "+ req.file.filename);
+
     return res.render('index',{
 		user: JSON.stringify(req.user),
 		title: 'upload Image',
-		image: (typeof req.file == 'undefined' ) ? req.flash('error', "veuillez selectionner le fichier à uploader!") : req.file.filename ,
+		image: (typeof req.file == 'undefined' ) ?	 req.flash('error', "veuillez selectionner le fichier à uploader!") : req.file.filename ,
 		messages: req.flash('error')
 	});
 };
 
 exports.listNotifications = function(req, res){
-		Notification.find().populate('commentaire annonceur').exec(function(err, notifications){
+		Notification.find({vue: false}).populate('commentaire annonceur').exec(function(err, notifications){
 			if(!err){
 				return res.json(notifications);
 			}else
 				return res.status(400).send({message : getErrorMessage(err)});
 		});
 	};
+
+exports.getAnnonceurById = function(req, res, next, annonceur_id){
+	Annonceur.findById(annonceur_id).exec(function(err, annonceur){
+		if(err) return res.status(400).send({message: getErrorMessage(err)});
+			if(!annonceur) return res.status(400).send({message: "No Annonceur with id "+ annonceur_id});
+			req.annonceur = annonceur;
+			next();
+	});
+	
+}
+
+exports.read = function(req, res){
+	res.json(req.annonceur)	
+};

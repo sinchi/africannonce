@@ -13,6 +13,7 @@ var config = require('./config'),
 		require('../app/models/categories.server.model.js');
 		require('../app/models/commentaires.server.model.js');
 		require('../app/models/notifications.server.model.js');
+		require('../app/models/photos.server.model.js');
 
 		return db;
 	};

@@ -6,7 +6,7 @@ var mainApplicationModule = angular.module(mainApplicationModuleName, []);
 
 angular.element(document).ready(function(){
 		
-		var socket = io();
+	/*	var socket = io();
 		var that = this;
 		that.message = '';
 
@@ -35,7 +35,7 @@ angular.element(document).ready(function(){
 		});
 
 		socket.emit('annonceID', '562a0bd997ed7adb10a014a2');
-
+		*/
 
 
 

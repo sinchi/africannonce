@@ -1,8 +1,8 @@
 "use strict";
 
 var mongoose= require('mongoose'),
-	Schema = mongoose.Schema;
-
+	Schema = mongoose.Schema,
+	Photo = mongoose.model('Photo');
 
 	var AnnonceSchema = new Schema({
 		titre:String,
@@ -43,7 +43,8 @@ var mongoose= require('mongoose'),
 			type: Schema.ObjectId,
 			ref: 'Categorie',
 			required: 'Categorie is required'
-		}
+		},
+		photos:[Photo]
 	});
 
 	
