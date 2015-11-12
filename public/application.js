@@ -43,13 +43,20 @@ mainApplicationModule.controller('HomeController', ['$scope', '$http','Upload' ,
       file.progress = Math.min(100, parseInt(100.0 * evt.loaded / evt.total));
     });
    }
-	
 
+   $scope.removeFile = function(index){
+   	$scope.files.splice(index, 1);
+   	console.log($scope.files[index].filename + " is deleted");
+   	
+   }
 	
-     $scope.uploadFiles = function(files, errFiles) {
-        $scope.files = files;
-        $scope.errFiles = errFiles;
-        angular.forEach(files, function(file) {
+   	$scope.selectFiles = function(files, errFiles){
+   		$scope.files = files;
+   		$scope.errFiles = errFiles;
+   	};
+	
+     $scope.uploadFiles = function() {       
+        angular.forEach($scope.files, function(file) {
             file.upload = Upload.upload({
                 url: '/upload',
                 data: {file: file}

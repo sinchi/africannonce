@@ -15,17 +15,22 @@
           Upload on form submit or button click
         <form name="form">
           Single Image with validations
+
           <input type="file" ngf-select ng-model="picFile" name="file"    
              accept="image/*" ngf-max-size="2MB" required>
+             <img ngf-thumbnail="picFile"><button ng-click="picFile = null" >Remove</button>
              <button ng-click="uploadPic(picFile)">Submit</button>
 
                <span class="progress" ng-show="picFile.progress >= 0">
         <div style="width:{{picFile.progress}}%" 
             ng-bind="picFile.progress + '%'"></div>
+            
+
+
       </span>
 
       <h4>Upload on file select</h4>
-          <button ngf-select="uploadFiles($files, $invalidFiles)" multiple
+          <button ngf-select="selectFiles($files, $invalidFiles)" multiple
                   accept="image/*" ngf-max-height="5000" ngf-max-size="5MB">
               Select Files</button>
           <br><br>
@@ -36,10 +41,13 @@
                 <div style="width:{{f.progress}}%"  
                     ng-bind="f.progress + '%'"></div>
               </span>
+               <img ngf-thumbnail="f"><button ng-click="removeFile($index)" >Remove</button>
+             
             </li>
             <li ng-repeat="f in errFiles" style="font:smaller">{{f.name}} {{f.$error}} {{f.$errorParam}}
             </li> 
           </ul>
+          <button ng-click="uploadFiles()">Submit</button>
           {{errorMsg}}
 
 

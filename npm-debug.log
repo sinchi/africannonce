@@ -1,0 +1,2042 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@2.14.4
+3 info using node@v4.1.2
+4 verbose readDependencies loading dependencies from /home/ayoub/africannonce/package.json
+5 warn package.json AFRIQUE_ANNONCE@0.0.9 No description
+6 warn package.json AFRIQUE_ANNONCE@0.0.9 No repository field.
+7 warn package.json AFRIQUE_ANNONCE@0.0.9 No license field.
+8 verbose install where, deps [ '/home/ayoub/africannonce',
+8 verbose install   [ 'async',
+8 verbose install     'body-parser',
+8 verbose install     'compression',
+8 verbose install     'connect-busboy',
+8 verbose install     'connect-flash',
+8 verbose install     'connect-mongo',
+8 verbose install     'cookie-parser',
+8 verbose install     'debug',
+8 verbose install     'ejs',
+8 verbose install     'errorhandler',
+8 verbose install     'escape-html',
+8 verbose install     'express',
+8 verbose install     'express-domain-middleware',
+8 verbose install     'express-fileupload',
+8 verbose install     'express-session',
+8 verbose install     'express-validator',
+8 verbose install     'fs',
+8 verbose install     'helmet',
+8 verbose install     'http-errors',
+8 verbose install     'method-override',
+8 verbose install     'mime-types',
+8 verbose install     'mongoose',
+8 verbose install     'morgan',
+8 verbose install     'multer',
+8 verbose install     'negotiator',
+8 verbose install     'ng-file-upload',
+8 verbose install     'passport',
+8 verbose install     'passport-facebook',
+8 verbose install     'passport-google-oauth',
+8 verbose install     'passport-local',
+8 verbose install     'passport-twitter',
+8 verbose install     'serve-index',
+8 verbose install     'socket.io' ] ]
+9 verbose install where, peers [ '/home/ayoub/africannonce', [] ]
+10 verbose installManyTop reading for lifecycle /home/ayoub/africannonce/package.json
+11 info preinstall AFRIQUE_ANNONCE@0.0.9
+12 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/async/package.json
+13 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/body-parser/package.json
+14 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/compression/package.json
+15 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/connect-busboy/package.json
+16 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/connect-flash/package.json
+17 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/connect-mongo/package.json
+18 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/cookie-parser/package.json
+19 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/ejs/package.json
+20 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/errorhandler/package.json
+21 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/express/package.json
+22 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/express-domain-middleware/package.json
+23 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/express-fileupload/package.json
+24 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/express-session/package.json
+25 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/express-validator/package.json
+26 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/fs/package.json
+27 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/helmet/package.json
+28 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/method-override/package.json
+29 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/mime/package.json
+30 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/mongoose/package.json
+31 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/morgan/package.json
+32 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/multer/package.json
+33 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/node-restful/package.json
+34 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/passport/package.json
+35 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/passport-facebook/package.json
+36 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/passport-google-oauth/package.json
+37 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/passport-local/package.json
+38 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/passport-twitter/package.json
+39 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/serve-index/package.json
+40 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/socket.io/package.json
+41 verbose installManyTop reading scoped package data from /home/ayoub/africannonce/node_modules/uid2/package.json
+42 info package.json connect-flash@0.1.1 No license field.
+43 info package.json connect-mongo@0.4.2 No license field.
+44 info package.json ejs@1.0.0 No license field.
+45 info package.json express-fileupload@0.0.2 No license field.
+46 info package.json fs@0.0.2 fs is also the name of a node core module.
+47 info package.json fs@0.0.2 No description
+48 info package.json fs@0.0.2 No repository field.
+49 info package.json fs@0.0.2 No README data
+50 info package.json passport-google-oauth@0.1.5 No license field.
+51 info package.json passport-facebook@1.0.3 No license field.
+52 info package.json passport-local@1.0.0 No license field.
+53 info package.json uid2@0.0.3 No repository field.
+54 info package.json uid2@0.0.3 No license field.
+55 info package.json passport-twitter@1.0.3 No license field.
+56 info package.json socket.io@1.1.0 No license field.
+57 info package.json connect-busboy@0.0.2 No license field.
+58 info package.json mime@1.3.4 No license field.
+59 info package.json mongoose@3.8.36 No license field.
+60 info package.json node-restful@0.2.2 No license field.
+61 verbose readDependencies loading dependencies from /home/ayoub/africannonce/package.json
+62 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/async/package.json
+63 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/body-parser/package.json
+64 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/compression/package.json
+65 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/connect-busboy/package.json
+66 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/connect-flash/package.json
+67 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/connect-mongo/package.json
+68 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/cookie-parser/package.json
+69 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/ejs/package.json
+70 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/errorhandler/package.json
+71 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/express/package.json
+72 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/express-domain-middleware/package.json
+73 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/express-fileupload/package.json
+74 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/express-session/package.json
+75 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/express-validator/package.json
+76 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/fs/package.json
+77 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/helmet/package.json
+78 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/method-override/package.json
+79 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/mime/package.json
+80 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/mongoose/package.json
+81 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/morgan/package.json
+82 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/multer/package.json
+83 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/node-restful/package.json
+84 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/passport/package.json
+85 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/passport-facebook/package.json
+86 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/passport-google-oauth/package.json
+87 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/passport-local/package.json
+88 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/passport-twitter/package.json
+89 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/serve-index/package.json
+90 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/socket.io/package.json
+91 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/uid2/package.json
+92 verbose targetResolver reading package data from /home/ayoub/africannonce/node_modules/.bin/mime/package.json
+93 verbose already installed skipping express-validator@^2.4.0 /home/ayoub/africannonce
+94 verbose already installed skipping fs@0.0.2 /home/ayoub/africannonce
+95 verbose already installed skipping helmet@^0.12.0 /home/ayoub/africannonce
+96 silly cache add args [ 'http-errors@^1.3.1', null ]
+97 verbose cache add spec http-errors@^1.3.1
+98 silly cache add parsed spec Result {
+98 silly cache add   raw: 'http-errors@^1.3.1',
+98 silly cache add   scope: null,
+98 silly cache add   name: 'http-errors',
+98 silly cache add   rawSpec: '^1.3.1',
+98 silly cache add   spec: '>=1.3.1 <2.0.0',
+98 silly cache add   type: 'range' }
+99 silly addNamed http-errors@>=1.3.1 <2.0.0
+100 verbose addNamed ">=1.3.1 <2.0.0" is a valid semver range for http-errors
+101 silly addNameRange { name: 'http-errors', range: '>=1.3.1 <2.0.0', hasData: false }
+102 silly mapToRegistry name http-errors
+103 silly mapToRegistry using default registry
+104 silly mapToRegistry registry https://registry.npmjs.org/
+105 silly mapToRegistry uri https://registry.npmjs.org/http-errors
+106 verbose addNameRange registry:https://registry.npmjs.org/http-errors not in flight; fetching
+107 verbose already installed skipping method-override@~2.2.0 /home/ayoub/africannonce
+108 silly cache add args [ 'mime-types@^2.1.7', null ]
+109 verbose cache add spec mime-types@^2.1.7
+110 silly cache add parsed spec Result {
+110 silly cache add   raw: 'mime-types@^2.1.7',
+110 silly cache add   scope: null,
+110 silly cache add   name: 'mime-types',
+110 silly cache add   rawSpec: '^2.1.7',
+110 silly cache add   spec: '>=2.1.7 <3.0.0',
+110 silly cache add   type: 'range' }
+111 silly addNamed mime-types@>=2.1.7 <3.0.0
+112 verbose addNamed ">=2.1.7 <3.0.0" is a valid semver range for mime-types
+113 silly addNameRange { name: 'mime-types', range: '>=2.1.7 <3.0.0', hasData: false }
+114 silly mapToRegistry name mime-types
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry https://registry.npmjs.org/
+117 silly mapToRegistry uri https://registry.npmjs.org/mime-types
+118 verbose addNameRange registry:https://registry.npmjs.org/mime-types not in flight; fetching
+119 verbose already installed skipping mongoose@~3.8.15 /home/ayoub/africannonce
+120 verbose already installed skipping morgan@~1.3.0 /home/ayoub/africannonce
+121 verbose already installed skipping multer@^1.0.6 /home/ayoub/africannonce
+122 silly cache add args [ 'negotiator@^0.6.0', null ]
+123 verbose cache add spec negotiator@^0.6.0
+124 silly cache add parsed spec Result {
+124 silly cache add   raw: 'negotiator@^0.6.0',
+124 silly cache add   scope: null,
+124 silly cache add   name: 'negotiator',
+124 silly cache add   rawSpec: '^0.6.0',
+124 silly cache add   spec: '>=0.6.0 <0.7.0',
+124 silly cache add   type: 'range' }
+125 silly addNamed negotiator@>=0.6.0 <0.7.0
+126 verbose addNamed ">=0.6.0 <0.7.0" is a valid semver range for negotiator
+127 silly addNameRange { name: 'negotiator', range: '>=0.6.0 <0.7.0', hasData: false }
+128 silly mapToRegistry name negotiator
+129 silly mapToRegistry using default registry
+130 silly mapToRegistry registry https://registry.npmjs.org/
+131 silly mapToRegistry uri https://registry.npmjs.org/negotiator
+132 verbose addNameRange registry:https://registry.npmjs.org/negotiator not in flight; fetching
+133 silly cache add args [ 'ng-file-upload@^10.0.2', null ]
+134 verbose cache add spec ng-file-upload@^10.0.2
+135 silly cache add parsed spec Result {
+135 silly cache add   raw: 'ng-file-upload@^10.0.2',
+135 silly cache add   scope: null,
+135 silly cache add   name: 'ng-file-upload',
+135 silly cache add   rawSpec: '^10.0.2',
+135 silly cache add   spec: '>=10.0.2 <11.0.0',
+135 silly cache add   type: 'range' }
+136 silly addNamed ng-file-upload@>=10.0.2 <11.0.0
+137 verbose addNamed ">=10.0.2 <11.0.0" is a valid semver range for ng-file-upload
+138 silly addNameRange { name: 'ng-file-upload',
+138 silly addNameRange   range: '>=10.0.2 <11.0.0',
+138 silly addNameRange   hasData: false }
+139 silly mapToRegistry name ng-file-upload
+140 silly mapToRegistry using default registry
+141 silly mapToRegistry registry https://registry.npmjs.org/
+142 silly mapToRegistry uri https://registry.npmjs.org/ng-file-upload
+143 verbose addNameRange registry:https://registry.npmjs.org/ng-file-upload not in flight; fetching
+144 verbose already installed skipping passport@~0.2.1 /home/ayoub/africannonce
+145 verbose already installed skipping passport-facebook@~1.0.3 /home/ayoub/africannonce
+146 verbose already installed skipping passport-google-oauth@~0.1.5 /home/ayoub/africannonce
+147 verbose already installed skipping passport-local@~1.0.0 /home/ayoub/africannonce
+148 verbose already installed skipping passport-twitter@~1.0.2 /home/ayoub/africannonce
+149 verbose already installed skipping serve-index@^1.1.6 /home/ayoub/africannonce
+150 verbose already installed skipping socket.io@~1.1.0 /home/ayoub/africannonce
+151 verbose already installed skipping async@^1.5.0 /home/ayoub/africannonce
+152 verbose already installed skipping body-parser@~1.8.0 /home/ayoub/africannonce
+153 verbose already installed skipping compression@~1.0.11 /home/ayoub/africannonce
+154 verbose already installed skipping connect-busboy@0.0.2 /home/ayoub/africannonce
+155 verbose already installed skipping connect-flash@~0.1.1 /home/ayoub/africannonce
+156 verbose already installed skipping connect-mongo@~0.4.1 /home/ayoub/africannonce
+157 verbose already installed skipping cookie-parser@~1.3.3 /home/ayoub/africannonce
+158 silly cache add args [ 'debug@^2.2.0', null ]
+159 verbose cache add spec debug@^2.2.0
+160 silly cache add parsed spec Result {
+160 silly cache add   raw: 'debug@^2.2.0',
+160 silly cache add   scope: null,
+160 silly cache add   name: 'debug',
+160 silly cache add   rawSpec: '^2.2.0',
+160 silly cache add   spec: '>=2.2.0 <3.0.0',
+160 silly cache add   type: 'range' }
+161 silly addNamed debug@>=2.2.0 <3.0.0
+162 verbose addNamed ">=2.2.0 <3.0.0" is a valid semver range for debug
+163 silly addNameRange { name: 'debug', range: '>=2.2.0 <3.0.0', hasData: false }
+164 silly mapToRegistry name debug
+165 silly mapToRegistry using default registry
+166 silly mapToRegistry registry https://registry.npmjs.org/
+167 silly mapToRegistry uri https://registry.npmjs.org/debug
+168 verbose addNameRange registry:https://registry.npmjs.org/debug not in flight; fetching
+169 verbose already installed skipping ejs@~1.0.0 /home/ayoub/africannonce
+170 verbose already installed skipping errorhandler@^1.4.2 /home/ayoub/africannonce
+171 silly cache add args [ 'escape-html@^1.0.3', null ]
+172 verbose cache add spec escape-html@^1.0.3
+173 silly cache add parsed spec Result {
+173 silly cache add   raw: 'escape-html@^1.0.3',
+173 silly cache add   scope: null,
+173 silly cache add   name: 'escape-html',
+173 silly cache add   rawSpec: '^1.0.3',
+173 silly cache add   spec: '>=1.0.3 <2.0.0',
+173 silly cache add   type: 'range' }
+174 silly addNamed escape-html@>=1.0.3 <2.0.0
+175 verbose addNamed ">=1.0.3 <2.0.0" is a valid semver range for escape-html
+176 silly addNameRange { name: 'escape-html', range: '>=1.0.3 <2.0.0', hasData: false }
+177 silly mapToRegistry name escape-html
+178 silly mapToRegistry using default registry
+179 silly mapToRegistry registry https://registry.npmjs.org/
+180 silly mapToRegistry uri https://registry.npmjs.org/escape-html
+181 verbose addNameRange registry:https://registry.npmjs.org/escape-html not in flight; fetching
+182 verbose already installed skipping express@~4.8.8 /home/ayoub/africannonce
+183 verbose request uri https://registry.npmjs.org/ng-file-upload
+184 verbose request no auth needed
+185 info attempt registry request try #1 at 10:28:25
+186 verbose request id 9661f5f02d3680e7
+187 http request GET https://registry.npmjs.org/ng-file-upload
+188 verbose already installed skipping express-domain-middleware@^0.1.0 /home/ayoub/africannonce
+189 verbose already installed skipping express-fileupload@0.0.2 /home/ayoub/africannonce
+190 verbose already installed skipping express-session@~1.7.6 /home/ayoub/africannonce
+191 verbose request uri https://registry.npmjs.org/http-errors
+192 verbose request no auth needed
+193 info attempt registry request try #1 at 10:28:25
+194 verbose etag "SXH43K3HIBV84M1DG2Y3Y70Q"
+195 http request GET https://registry.npmjs.org/http-errors
+196 verbose request uri https://registry.npmjs.org/debug
+197 verbose request no auth needed
+198 info attempt registry request try #1 at 10:28:25
+199 verbose etag "8WVTZQXUEJFL9J7UEN6NGI73Z"
+200 http request GET https://registry.npmjs.org/debug
+201 verbose request uri https://registry.npmjs.org/mime-types
+202 verbose request no auth needed
+203 info attempt registry request try #1 at 10:28:25
+204 verbose etag "5E021C2P0BA35N73SRLTW02TQ"
+205 http request GET https://registry.npmjs.org/mime-types
+206 verbose request uri https://registry.npmjs.org/escape-html
+207 verbose request no auth needed
+208 info attempt registry request try #1 at 10:28:40
+209 verbose etag "6CSU8OPD54ESLWI5PZUKQV4NZ"
+210 http request GET https://registry.npmjs.org/escape-html
+211 verbose request uri https://registry.npmjs.org/negotiator
+212 verbose request no auth needed
+213 info attempt registry request try #1 at 10:28:40
+214 verbose etag "EEO9SCCDNI2ZFBRVFF8RAP24E"
+215 http request GET https://registry.npmjs.org/negotiator
+216 http 304 https://registry.npmjs.org/debug
+217 silly get cb [ 304,
+217 silly get   { date: 'Thu, 12 Nov 2015 10:28:41 GMT',
+217 silly get     via: '1.1 varnish',
+217 silly get     'cache-control': 'max-age=60',
+217 silly get     etag: '"8WVTZQXUEJFL9J7UEN6NGI73Z"',
+217 silly get     age: '28',
+217 silly get     connection: 'keep-alive',
+217 silly get     'x-served-by': 'cache-fra1239-FRA',
+217 silly get     'x-cache': 'HIT',
+217 silly get     'x-cache-hits': '3',
+217 silly get     'x-timer': 'S1447324121.535195,VS0,VE0',
+217 silly get     vary: 'Accept' } ]
+218 verbose etag https://registry.npmjs.org/debug from cache
+219 verbose get saving debug to /home/ayoub/.npm/registry.npmjs.org/debug/.cache.json
+220 silly addNameRange number 2 { name: 'debug', range: '>=2.2.0 <3.0.0', hasData: true }
+221 silly addNameRange versions [ 'debug',
+221 silly addNameRange   [ '0.0.1',
+221 silly addNameRange     '0.1.0',
+221 silly addNameRange     '0.2.0',
+221 silly addNameRange     '0.3.0',
+221 silly addNameRange     '0.4.0',
+221 silly addNameRange     '0.4.1',
+221 silly addNameRange     '0.5.0',
+221 silly addNameRange     '0.6.0',
+221 silly addNameRange     '0.7.0',
+221 silly addNameRange     '0.7.1',
+221 silly addNameRange     '0.7.2',
+221 silly addNameRange     '0.7.3',
+221 silly addNameRange     '0.7.4',
+221 silly addNameRange     '0.8.0',
+221 silly addNameRange     '0.8.1',
+221 silly addNameRange     '1.0.0',
+221 silly addNameRange     '1.0.1',
+221 silly addNameRange     '1.0.2',
+221 silly addNameRange     '1.0.3',
+221 silly addNameRange     '1.0.4',
+221 silly addNameRange     '2.0.0',
+221 silly addNameRange     '2.1.0',
+221 silly addNameRange     '2.1.1',
+221 silly addNameRange     '2.1.2',
+221 silly addNameRange     '2.1.3',
+221 silly addNameRange     '2.2.0' ] ]
+222 silly addNamed debug@2.2.0
+223 verbose addNamed "2.2.0" is a plain semver version for debug
+224 silly cache afterAdd debug@2.2.0
+225 verbose afterAdd /home/ayoub/.npm/debug/2.2.0/package/package.json not in flight; writing
+226 verbose afterAdd /home/ayoub/.npm/debug/2.2.0/package/package.json written
+227 http 200 https://registry.npmjs.org/mime-types
+228 silly get cb [ 200,
+228 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+228 silly get     etag: '"96DG8YB4OLVQOS46H9ISQLOG5"',
+228 silly get     'content-type': 'application/json',
+228 silly get     'cache-control': 'max-age=60',
+228 silly get     'content-length': '46373',
+228 silly get     'accept-ranges': 'bytes',
+228 silly get     date: 'Thu, 12 Nov 2015 10:28:41 GMT',
+228 silly get     via: '1.1 varnish',
+228 silly get     age: '33',
+228 silly get     connection: 'keep-alive',
+228 silly get     'x-served-by': 'cache-fra1247-FRA',
+228 silly get     'x-cache': 'HIT',
+228 silly get     'x-cache-hits': '2',
+228 silly get     'x-timer': 'S1447324121.525983,VS0,VE0',
+228 silly get     vary: 'Accept' } ]
+229 verbose get saving mime-types to /home/ayoub/.npm/registry.npmjs.org/mime-types/.cache.json
+230 silly addNameRange number 2 { name: 'mime-types', range: '>=2.1.7 <3.0.0', hasData: true }
+231 silly addNameRange versions [ 'mime-types',
+231 silly addNameRange   [ '0.1.0',
+231 silly addNameRange     '1.0.0',
+231 silly addNameRange     '1.0.1',
+231 silly addNameRange     '1.0.2',
+231 silly addNameRange     '2.0.0',
+231 silly addNameRange     '2.0.1',
+231 silly addNameRange     '2.0.2',
+231 silly addNameRange     '2.0.3',
+231 silly addNameRange     '2.0.4',
+231 silly addNameRange     '2.0.5',
+231 silly addNameRange     '2.0.6',
+231 silly addNameRange     '2.0.7',
+231 silly addNameRange     '2.0.8',
+231 silly addNameRange     '2.0.9',
+231 silly addNameRange     '2.0.10',
+231 silly addNameRange     '2.0.11',
+231 silly addNameRange     '2.0.12',
+231 silly addNameRange     '2.0.13',
+231 silly addNameRange     '2.0.14',
+231 silly addNameRange     '2.1.0',
+231 silly addNameRange     '2.1.1',
+231 silly addNameRange     '2.1.2',
+231 silly addNameRange     '2.1.3',
+231 silly addNameRange     '2.1.4',
+231 silly addNameRange     '2.1.5',
+231 silly addNameRange     '2.1.6',
+231 silly addNameRange     '2.1.7' ] ]
+232 silly addNamed mime-types@2.1.7
+233 verbose addNamed "2.1.7" is a plain semver version for mime-types
+234 silly cache afterAdd mime-types@2.1.7
+235 verbose afterAdd /home/ayoub/.npm/mime-types/2.1.7/package/package.json not in flight; writing
+236 verbose afterAdd /home/ayoub/.npm/mime-types/2.1.7/package/package.json written
+237 http 200 https://registry.npmjs.org/ng-file-upload
+238 silly get cb [ 200,
+238 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+238 silly get     etag: '"D0K5KNROJ7VQ6HH0BYBEIFOU9"',
+238 silly get     'content-type': 'application/json',
+238 silly get     'cache-control': 'max-age=60',
+238 silly get     'content-length': '212366',
+238 silly get     'accept-ranges': 'bytes',
+238 silly get     date: 'Thu, 12 Nov 2015 10:28:41 GMT',
+238 silly get     via: '1.1 varnish',
+238 silly get     age: '0',
+238 silly get     connection: 'keep-alive',
+238 silly get     'x-served-by': 'cache-fra1231-FRA',
+238 silly get     'x-cache': 'HIT',
+238 silly get     'x-cache-hits': '1',
+238 silly get     'x-timer': 'S1447324121.484923,VS0,VE189',
+238 silly get     vary: 'Accept' } ]
+239 verbose get saving ng-file-upload to /home/ayoub/.npm/registry.npmjs.org/ng-file-upload/.cache.json
+240 silly addNameRange number 2 { name: 'ng-file-upload',
+240 silly addNameRange   range: '>=10.0.2 <11.0.0',
+240 silly addNameRange   hasData: true }
+241 silly addNameRange versions [ 'ng-file-upload',
+241 silly addNameRange   [ '2.2.2',
+241 silly addNameRange     '3.0.1',
+241 silly addNameRange     '3.0.2',
+241 silly addNameRange     '3.0.3',
+241 silly addNameRange     '3.0.4',
+241 silly addNameRange     '3.0.5',
+241 silly addNameRange     '3.0.6',
+241 silly addNameRange     '3.0.7',
+241 silly addNameRange     '3.1.0',
+241 silly addNameRange     '3.1.1',
+241 silly addNameRange     '3.1.2',
+241 silly addNameRange     '3.2.0',
+241 silly addNameRange     '3.2.1',
+241 silly addNameRange     '3.2.2',
+241 silly addNameRange     '3.2.3',
+241 silly addNameRange     '3.2.4',
+241 silly addNameRange     '3.2.5',
+241 silly addNameRange     '3.3.0',
+241 silly addNameRange     '3.3.1',
+241 silly addNameRange     '3.3.2',
+241 silly addNameRange     '3.3.3',
+241 silly addNameRange     '3.3.4',
+241 silly addNameRange     '4.0.0',
+241 silly addNameRange     '4.0.1',
+241 silly addNameRange     '4.0.2',
+241 silly addNameRange     '4.0.3',
+241 silly addNameRange     '4.0.4',
+241 silly addNameRange     '4.1.0',
+241 silly addNameRange     '4.1.1',
+241 silly addNameRange     '4.1.2',
+241 silly addNameRange     '4.1.3',
+241 silly addNameRange     '4.1.4',
+241 silly addNameRange     '4.2.0',
+241 silly addNameRange     '4.2.1',
+241 silly addNameRange     '4.2.2',
+241 silly addNameRange     '4.2.3',
+241 silly addNameRange     '4.2.4',
+241 silly addNameRange     '5.0.0',
+241 silly addNameRange     '5.0.1',
+241 silly addNameRange     '5.0.2',
+241 silly addNameRange     '5.0.3',
+241 silly addNameRange     '5.0.4',
+241 silly addNameRange     '5.0.5',
+241 silly addNameRange     '5.0.6',
+241 silly addNameRange     '5.0.7',
+241 silly addNameRange     '5.0.8',
+241 silly addNameRange     '5.0.9',
+241 silly addNameRange     '5.1.0',
+241 silly addNameRange     '5.2.0',
+241 silly addNameRange     '6.0.0',
+241 silly addNameRange     '6.0.1',
+241 silly addNameRange     '6.0.2',
+241 silly addNameRange     '6.0.3',
+241 silly addNameRange     '6.0.4',
+241 silly addNameRange     '6.1.0',
+241 silly addNameRange     '6.1.1',
+241 silly addNameRange     '6.1.2',
+241 silly addNameRange     '6.2.0',
+241 silly addNameRange     '6.2.1',
+241 silly addNameRange     '7.0.0',
+241 silly addNameRange     '7.0.1',
+241 silly addNameRange     '7.0.2',
+241 silly addNameRange     '7.0.3',
+241 silly addNameRange     '7.0.4',
+241 silly addNameRange     '7.0.5',
+241 silly addNameRange     '7.0.6',
+241 silly addNameRange     '7.0.7',
+241 silly addNameRange     '7.0.8',
+241 silly addNameRange     '7.0.9',
+241 silly addNameRange     '7.0.10',
+241 silly addNameRange     '7.0.11',
+241 silly addNameRange     '7.0.12',
+241 silly addNameRange     '7.0.13',
+241 silly addNameRange     '7.0.14',
+241 silly addNameRange     '7.0.15',
+241 silly addNameRange     '7.0.16',
+241 silly addNameRange     '7.0.17',
+241 silly addNameRange     '7.1.0',
+241 silly addNameRange     '7.2.0',
+241 silly addNameRange     '7.2.1',
+241 silly addNameRange     '7.2.2',
+241 silly addNameRange     '7.3.0',
+241 silly addNameRange     '7.3.1',
+241 silly addNameRange     '7.3.2',
+241 silly addNameRange     '7.3.3',
+241 silly addNameRange     '7.3.4',
+241 silly addNameRange     '7.3.5',
+241 silly addNameRange     '7.3.6',
+241 silly addNameRange     '7.3.7',
+241 silly addNameRange     '7.3.8',
+241 silly addNameRange     '7.3.9',
+241 silly addNameRange     '8.0.0',
+241 silly addNameRange     '8.0.1',
+241 silly addNameRange     '8.0.2',
+241 silly addNameRange     '8.0.3',
+241 silly addNameRange     '8.0.4',
+241 silly addNameRange     '8.0.5',
+241 silly addNameRange     '8.0.6',
+241 silly addNameRange     '9.0.0',
+241 silly addNameRange     '9.0.1',
+241 silly addNameRange     '9.0.2',
+241 silly addNameRange     '9.0.3',
+241 silly addNameRange     '9.0.4',
+241 silly addNameRange     '9.0.5',
+241 silly addNameRange     '9.0.6',
+241 silly addNameRange     '9.0.7',
+241 silly addNameRange     '9.0.8',
+241 silly addNameRange     '9.0.9',
+241 silly addNameRange     '9.0.10',
+241 silly addNameRange     '9.0.11',
+241 silly addNameRange     '9.0.12',
+241 silly addNameRange     '9.0.13',
+241 silly addNameRange     '9.0.14',
+241 silly addNameRange     '9.0.15',
+241 silly addNameRange     '9.0.16',
+241 silly addNameRange     '9.0.17',
+241 silly addNameRange     '9.0.18',
+241 silly addNameRange     '9.0.19',
+241 silly addNameRange     '9.1.0',
+241 silly addNameRange     '9.1.1',
+241 silly addNameRange     '9.1.2',
+241 silly addNameRange     '10.0.0',
+241 silly addNameRange     '10.0.1',
+241 silly addNameRange     '10.0.2' ] ]
+242 silly addNamed ng-file-upload@10.0.2
+243 verbose addNamed "10.0.2" is a plain semver version for ng-file-upload
+244 silly mapToRegistry name ng-file-upload
+245 silly mapToRegistry using default registry
+246 silly mapToRegistry registry https://registry.npmjs.org/
+247 silly mapToRegistry uri https://registry.npmjs.org/ng-file-upload
+248 verbose addRemoteTarball https://registry.npmjs.org/ng-file-upload/-/ng-file-upload-10.0.2.tgz not in flight; adding
+249 verbose addRemoteTarball [ 'https://registry.npmjs.org/ng-file-upload/-/ng-file-upload-10.0.2.tgz',
+249 verbose addRemoteTarball   'c0556a52abecd66482c6c55978bc40c1da486477' ]
+250 info retry fetch attempt 1 at 10:28:41
+251 info attempt registry request try #1 at 10:28:41
+252 http fetch GET https://registry.npmjs.org/ng-file-upload/-/ng-file-upload-10.0.2.tgz
+253 http 304 https://registry.npmjs.org/escape-html
+254 silly get cb [ 304,
+254 silly get   { date: 'Thu, 12 Nov 2015 10:28:46 GMT',
+254 silly get     via: '1.1 varnish',
+254 silly get     'cache-control': 'max-age=60',
+254 silly get     etag: '"6CSU8OPD54ESLWI5PZUKQV4NZ"',
+254 silly get     age: '37',
+254 silly get     connection: 'keep-alive',
+254 silly get     'x-served-by': 'cache-fra1227-FRA',
+254 silly get     'x-cache': 'HIT',
+254 silly get     'x-cache-hits': '1',
+254 silly get     'x-timer': 'S1447324126.499276,VS0,VE0',
+254 silly get     vary: 'Accept' } ]
+255 verbose etag https://registry.npmjs.org/escape-html from cache
+256 verbose get saving escape-html to /home/ayoub/.npm/registry.npmjs.org/escape-html/.cache.json
+257 silly addNameRange number 2 { name: 'escape-html', range: '>=1.0.3 <2.0.0', hasData: true }
+258 silly addNameRange versions [ 'escape-html',
+258 silly addNameRange   [ '0.0.1', '1.0.0', '1.0.1', '1.0.2', '1.0.3' ] ]
+259 silly addNamed escape-html@1.0.3
+260 verbose addNamed "1.0.3" is a plain semver version for escape-html
+261 silly mapToRegistry name escape-html
+262 silly mapToRegistry using default registry
+263 silly mapToRegistry registry https://registry.npmjs.org/
+264 silly mapToRegistry uri https://registry.npmjs.org/escape-html
+265 verbose addRemoteTarball https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz not in flight; adding
+266 verbose addRemoteTarball [ 'https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz',
+266 verbose addRemoteTarball   '0258eae4d3d0c0974de1c169188ef0051d1d1988' ]
+267 info retry fetch attempt 1 at 10:28:46
+268 info attempt registry request try #1 at 10:28:46
+269 http fetch GET https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz
+270 http 304 https://registry.npmjs.org/negotiator
+271 silly get cb [ 304,
+271 silly get   { date: 'Thu, 12 Nov 2015 10:28:46 GMT',
+271 silly get     via: '1.1 varnish',
+271 silly get     'cache-control': 'max-age=60',
+271 silly get     etag: '"EEO9SCCDNI2ZFBRVFF8RAP24E"',
+271 silly get     age: '3',
+271 silly get     connection: 'keep-alive',
+271 silly get     'x-served-by': 'cache-fra1220-FRA',
+271 silly get     'x-cache': 'HIT',
+271 silly get     'x-cache-hits': '2',
+271 silly get     'x-timer': 'S1447324126.554302,VS0,VE0',
+271 silly get     vary: 'Accept' } ]
+272 verbose etag https://registry.npmjs.org/negotiator from cache
+273 verbose get saving negotiator to /home/ayoub/.npm/registry.npmjs.org/negotiator/.cache.json
+274 silly addNameRange number 2 { name: 'negotiator', range: '>=0.6.0 <0.7.0', hasData: true }
+275 silly addNameRange versions [ 'negotiator',
+275 silly addNameRange   [ '0.1.0',
+275 silly addNameRange     '0.2.3',
+275 silly addNameRange     '0.2.4',
+275 silly addNameRange     '0.2.5',
+275 silly addNameRange     '0.2.6',
+275 silly addNameRange     '0.2.7',
+275 silly addNameRange     '0.2.8',
+275 silly addNameRange     '0.3.0',
+275 silly addNameRange     '0.4.0',
+275 silly addNameRange     '0.4.1',
+275 silly addNameRange     '0.4.2',
+275 silly addNameRange     '0.4.3',
+275 silly addNameRange     '0.4.4',
+275 silly addNameRange     '0.4.5',
+275 silly addNameRange     '0.4.6',
+275 silly addNameRange     '0.4.7',
+275 silly addNameRange     '0.4.8',
+275 silly addNameRange     '0.4.9',
+275 silly addNameRange     '0.5.0',
+275 silly addNameRange     '0.5.1',
+275 silly addNameRange     '0.5.2',
+275 silly addNameRange     '0.5.3',
+275 silly addNameRange     '0.6.0' ] ]
+276 silly addNamed negotiator@0.6.0
+277 verbose addNamed "0.6.0" is a plain semver version for negotiator
+278 silly mapToRegistry name negotiator
+279 silly mapToRegistry using default registry
+280 silly mapToRegistry registry https://registry.npmjs.org/
+281 silly mapToRegistry uri https://registry.npmjs.org/negotiator
+282 verbose addRemoteTarball https://registry.npmjs.org/negotiator/-/negotiator-0.6.0.tgz not in flight; adding
+283 verbose addRemoteTarball [ 'https://registry.npmjs.org/negotiator/-/negotiator-0.6.0.tgz',
+283 verbose addRemoteTarball   '33593a5a2b0ce30c985840c6f56b6fb1ea9e3a55' ]
+284 info retry fetch attempt 1 at 10:28:46
+285 info attempt registry request try #1 at 10:28:46
+286 http fetch GET https://registry.npmjs.org/negotiator/-/negotiator-0.6.0.tgz
+287 http 200 https://registry.npmjs.org/http-errors
+288 silly get cb [ 200,
+288 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+288 silly get     etag: '"634Y56TZCOOH3MCVN035HTW6Q"',
+288 silly get     'content-type': 'application/json',
+288 silly get     'cache-control': 'max-age=60',
+288 silly get     'content-length': '23254',
+288 silly get     'accept-ranges': 'bytes',
+288 silly get     date: 'Thu, 12 Nov 2015 10:28:46 GMT',
+288 silly get     via: '1.1 varnish',
+288 silly get     age: '21',
+288 silly get     connection: 'keep-alive',
+288 silly get     'x-served-by': 'cache-fra1234-FRA',
+288 silly get     'x-cache': 'HIT',
+288 silly get     'x-cache-hits': '3',
+288 silly get     'x-timer': 'S1447324126.549668,VS0,VE0',
+288 silly get     vary: 'Accept' } ]
+289 verbose get saving http-errors to /home/ayoub/.npm/registry.npmjs.org/http-errors/.cache.json
+290 silly addNameRange number 2 { name: 'http-errors', range: '>=1.3.1 <2.0.0', hasData: true }
+291 silly addNameRange versions [ 'http-errors',
+291 silly addNameRange   [ '0.0.1',
+291 silly addNameRange     '1.0.0',
+291 silly addNameRange     '1.0.1',
+291 silly addNameRange     '1.1.0',
+291 silly addNameRange     '1.2.0',
+291 silly addNameRange     '1.2.1',
+291 silly addNameRange     '1.2.2',
+291 silly addNameRange     '1.2.3',
+291 silly addNameRange     '1.2.4',
+291 silly addNameRange     '1.2.5',
+291 silly addNameRange     '1.2.6',
+291 silly addNameRange     '1.2.7',
+291 silly addNameRange     '1.2.8',
+291 silly addNameRange     '1.3.0',
+291 silly addNameRange     '1.3.1' ] ]
+292 silly addNamed http-errors@1.3.1
+293 verbose addNamed "1.3.1" is a plain semver version for http-errors
+294 silly cache afterAdd http-errors@1.3.1
+295 verbose afterAdd /home/ayoub/.npm/http-errors/1.3.1/package/package.json not in flight; writing
+296 verbose afterAdd /home/ayoub/.npm/http-errors/1.3.1/package/package.json written
+297 http fetch 200 https://registry.npmjs.org/ng-file-upload/-/ng-file-upload-10.0.2.tgz
+298 silly fetchAndShaCheck shasum c0556a52abecd66482c6c55978bc40c1da486477
+299 verbose addTmpTarball /tmp/npm-2859-76f2125a/registry.npmjs.org/ng-file-upload/-/ng-file-upload-10.0.2.tgz not in flight; adding
+300 verbose addTmpTarball already have metadata; skipping unpack for ng-file-upload@10.0.2
+301 silly cache afterAdd ng-file-upload@10.0.2
+302 verbose afterAdd /home/ayoub/.npm/ng-file-upload/10.0.2/package/package.json not in flight; writing
+303 verbose afterAdd /home/ayoub/.npm/ng-file-upload/10.0.2/package/package.json written
+304 http fetch 200 https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz
+305 silly fetchAndShaCheck shasum 0258eae4d3d0c0974de1c169188ef0051d1d1988
+306 verbose addTmpTarball /tmp/npm-2859-76f2125a/registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz not in flight; adding
+307 verbose addTmpTarball already have metadata; skipping unpack for escape-html@1.0.3
+308 silly cache afterAdd escape-html@1.0.3
+309 verbose afterAdd /home/ayoub/.npm/escape-html/1.0.3/package/package.json not in flight; writing
+310 verbose afterAdd /home/ayoub/.npm/escape-html/1.0.3/package/package.json written
+311 http fetch 200 https://registry.npmjs.org/negotiator/-/negotiator-0.6.0.tgz
+312 silly fetchAndShaCheck shasum 33593a5a2b0ce30c985840c6f56b6fb1ea9e3a55
+313 verbose addTmpTarball /tmp/npm-2859-76f2125a/registry.npmjs.org/negotiator/-/negotiator-0.6.0.tgz not in flight; adding
+314 verbose addTmpTarball already have metadata; skipping unpack for negotiator@0.6.0
+315 silly cache afterAdd negotiator@0.6.0
+316 verbose afterAdd /home/ayoub/.npm/negotiator/0.6.0/package/package.json not in flight; writing
+317 verbose afterAdd /home/ayoub/.npm/negotiator/0.6.0/package/package.json written
+318 silly install resolved [ { name: 'debug',
+318 silly install resolved     version: '2.2.0',
+318 silly install resolved     repository: { type: 'git', url: 'git://github.com/visionmedia/debug.git' },
+318 silly install resolved     description: 'small debugging utility',
+318 silly install resolved     keywords: [ 'debug', 'log', 'debugger' ],
+318 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+318 silly install resolved     contributors: [ [Object] ],
+318 silly install resolved     license: 'MIT',
+318 silly install resolved     dependencies: { ms: '0.7.1' },
+318 silly install resolved     devDependencies: { browserify: '9.0.3', mocha: '*' },
+318 silly install resolved     main: './node.js',
+318 silly install resolved     browser: './browser.js',
+318 silly install resolved     component: { scripts: [Object] },
+318 silly install resolved     gitHead: 'b38458422b5aa8aa6d286b10dfe427e8a67e2b35',
+318 silly install resolved     bugs: { url: 'https://github.com/visionmedia/debug/issues' },
+318 silly install resolved     homepage: 'https://github.com/visionmedia/debug',
+318 silly install resolved     _id: 'debug@2.2.0',
+318 silly install resolved     scripts: {},
+318 silly install resolved     _shasum: 'f87057e995b1a1f6ae6a4960664137bc56f039da',
+318 silly install resolved     _from: 'debug@>=2.2.0 <3.0.0',
+318 silly install resolved     _npmVersion: '2.7.4',
+318 silly install resolved     _nodeVersion: '0.12.2',
+318 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+318 silly install resolved     maintainers: [ [Object], [Object] ],
+318 silly install resolved     dist:
+318 silly install resolved      { shasum: 'f87057e995b1a1f6ae6a4960664137bc56f039da',
+318 silly install resolved        tarball: 'http://registry.npmjs.org/debug/-/debug-2.2.0.tgz' },
+318 silly install resolved     directories: {},
+318 silly install resolved     _resolved: 'https://registry.npmjs.org/debug/-/debug-2.2.0.tgz',
+318 silly install resolved     readme: 'ERROR: No README data found!' },
+318 silly install resolved   { name: 'mime-types',
+318 silly install resolved     description: 'The ultimate javascript content-type utility.',
+318 silly install resolved     version: '2.1.7',
+318 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+318 silly install resolved     license: 'MIT',
+318 silly install resolved     keywords: [ 'mime', 'types' ],
+318 silly install resolved     repository:
+318 silly install resolved      { type: 'git',
+318 silly install resolved        url: 'git+https://github.com/jshttp/mime-types.git' },
+318 silly install resolved     dependencies: { 'mime-db': '~1.19.0' },
+318 silly install resolved     devDependencies: { istanbul: '0.3.20', mocha: '~1.21.5' },
+318 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'index.js' ],
+318 silly install resolved     engines: { node: '>= 0.6' },
+318 silly install resolved     scripts:
+318 silly install resolved      { test: 'mocha --reporter spec test/test.js',
+318 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot test/test.js',
+318 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot test/test.js' },
+318 silly install resolved     gitHead: '43f860c7df4a70246272194d601348865d550298',
+318 silly install resolved     bugs: { url: 'https://github.com/jshttp/mime-types/issues' },
+318 silly install resolved     homepage: 'https://github.com/jshttp/mime-types',
+318 silly install resolved     _id: 'mime-types@2.1.7',
+318 silly install resolved     _shasum: 'ff603970e3c731ef6f7f4df3c9a0f463a13c2755',
+318 silly install resolved     _from: 'mime-types@>=2.1.7 <3.0.0',
+318 silly install resolved     _npmVersion: '1.4.28',
+318 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+318 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+318 silly install resolved     dist:
+318 silly install resolved      { shasum: 'ff603970e3c731ef6f7f4df3c9a0f463a13c2755',
+318 silly install resolved        tarball: 'http://registry.npmjs.org/mime-types/-/mime-types-2.1.7.tgz' },
+318 silly install resolved     directories: {},
+318 silly install resolved     _resolved: 'https://registry.npmjs.org/mime-types/-/mime-types-2.1.7.tgz',
+318 silly install resolved     readme: 'ERROR: No README data found!' },
+318 silly install resolved   { name: 'http-errors',
+318 silly install resolved     description: 'Create HTTP error objects',
+318 silly install resolved     version: '1.3.1',
+318 silly install resolved     author:
+318 silly install resolved      { name: 'Jonathan Ong',
+318 silly install resolved        email: 'me@jongleberry.com',
+318 silly install resolved        url: 'http://jongleberry.com' },
+318 silly install resolved     contributors: [ [Object], [Object] ],
+318 silly install resolved     license: 'MIT',
+318 silly install resolved     repository:
+318 silly install resolved      { type: 'git',
+318 silly install resolved        url: 'git+https://github.com/jshttp/http-errors.git' },
+318 silly install resolved     dependencies: { inherits: '~2.0.1', statuses: '1' },
+318 silly install resolved     devDependencies: { istanbul: '0', mocha: '1' },
+318 silly install resolved     engines: { node: '>= 0.6' },
+318 silly install resolved     scripts:
+318 silly install resolved      { test: 'mocha --reporter spec --bail',
+318 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot',
+318 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot' },
+318 silly install resolved     keywords: [ 'http', 'error' ],
+318 silly install resolved     files: [ 'index.js', 'HISTORY.md', 'LICENSE', 'README.md' ],
+318 silly install resolved     readme: '# http-errors\n\n[![NPM Version][npm-image]][npm-url]\n[![NPM Downloads][downloads-image]][downloads-url]\n[![Node.js Version][node-version-image]][node-version-url]\n[![Build Status][travis-image]][travis-url]\n[![Test Coverage][coveralls-image]][coveralls-url]\n\nCreate HTTP errors for Express, Koa, Connect, etc. with ease.\n\n## Example\n\n```js\nvar createError = require(\'http-errors\');\n\napp.use(function (req, res, next) {\n  if (!req.user) return next(createError(401, \'Please login to view this page.\'));\n  next();\n})\n```\n\n## API\n\nThis is the current API, currently extracted from Koa and subject to change.\n\n### Error Properties\n\n- `message`\n- `status` and `statusCode` - the status code of the error, defaulting to `500`\n\n### createError([status], [message], [properties])\n\n```js\nvar err = createError(404, \'This video does not exist!\');\n```\n\n- `status: 500` - the status code as a number\n- `message` - the message of the error, defaulting to node\'s text for that status code.\n- `properties` - custom properties to attach to the object\n\n### new createError\\[code || name\\](\\[msg]\\))\n\n```js\nvar err = new createError.NotFound();\n```\n\n- `code` - the status code as a number\n- `name` - the name of the error as a "bumpy case", i.e. `NotFound` or `InternalServerError`.\n\n## License\n\n[MIT](LICENSE)\n\n[npm-image]: https://img.shields.io/npm/v/http-errors.svg?style=flat\n[npm-url]: https://npmjs.org/package/http-errors\n[node-version-image]: https://img.shields.io/node/v/http-errors.svg?style=flat\n[node-version-url]: http://nodejs.org/download/\n[travis-image]: https://img.shields.io/travis/jshttp/http-errors.svg?style=flat\n[travis-url]: https://travis-ci.org/jshttp/http-errors\n[coveralls-image]: https://img.shields.io/coveralls/jshttp/http-errors.svg?style=flat\n[coveralls-url]: https://coveralls.io/r/jshttp/http-errors\n[downloads-image]: https://img.shields.io/npm/dm/http-errors.svg?style=flat\n[downloads-url]: https://npmjs.org/package/http-errors\n',
+318 silly install resolved     readmeFilename: 'README.md',
+318 silly install resolved     bugs: { url: 'https://github.com/jshttp/http-errors/issues' },
+318 silly install resolved     homepage: 'https://github.com/jshttp/http-errors#readme',
+318 silly install resolved     _id: 'http-errors@1.3.1',
+318 silly install resolved     _shasum: '197e22cdebd4198585e8694ef6786197b91ed942',
+318 silly install resolved     _resolved: 'https://registry.npmjs.org/http-errors/-/http-errors-1.3.1.tgz',
+318 silly install resolved     _from: 'http-errors@>=1.3.1 <2.0.0' },
+318 silly install resolved   { name: 'ng-file-upload',
+318 silly install resolved     version: '10.0.2',
+318 silly install resolved     devDependencies:
+318 silly install resolved      { grunt: '^0.4.5',
+318 silly install resolved        'grunt-contrib-concat': '^0.5.1',
+318 silly install resolved        'grunt-contrib-clean': '^0.6.0',
+318 silly install resolved        'grunt-contrib-jshint': '^0.11.0',
+318 silly install resolved        'grunt-contrib-uglify': '^0.8.0',
+318 silly install resolved        'grunt-contrib-watch': '^0.6.1',
+318 silly install resolved        'grunt-contrib-copy': '~0.4.1',
+318 silly install resolved        'grunt-text-replace': '~0.3.12',
+318 silly install resolved        'grunt-git': '~0.2.14',
+318 silly install resolved        'grunt-serve': '^0.1.6',
+318 silly install resolved        'jshint-stylish': '^1.0.0',
+318 silly install resolved        'load-grunt-tasks': '^3.1.0' },
+318 silly install resolved     description: 'An AngularJS directive for file upload using HTML5 with FileAPI polyfill for unsupported browsers',
+318 silly install resolved     main: 'index.js',
+318 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+318 silly install resolved     repository:
+318 silly install resolved      { type: 'git',
+318 silly install resolved        url: 'git+https://github.com/danialfarid/ng-file-upload.git' },
+318 silly install resolved     keywords: [ 'angularjs', 'ng-file-upload', 'file-upload', 'javascript' ],
+318 silly install resolved     author: { name: 'danial.farid@gmail.com' },
+318 silly install resolved     license: 'MIT',
+318 silly install resolved     bugs: { url: 'https://github.com/danialfarid/ng-file-upload/issues' },
+318 silly install resolved     homepage: 'https://github.com/danialfarid/ng-file-upload',
+318 silly install resolved     gitHead: '52be8e479589588e2a5bf7c722e7c1e84db3b182',
+318 silly install resolved     _id: 'ng-file-upload@10.0.2',
+318 silly install resolved     _shasum: 'c0556a52abecd66482c6c55978bc40c1da486477',
+318 silly install resolved     _from: 'ng-file-upload@>=10.0.2 <11.0.0',
+318 silly install resolved     _npmVersion: '2.12.1',
+318 silly install resolved     _nodeVersion: '0.12.0',
+318 silly install resolved     _npmUser: { name: 'danial.farid', email: 'danial.farid@gmail.com' },
+318 silly install resolved     maintainers: [ [Object] ],
+318 silly install resolved     dist:
+318 silly install resolved      { shasum: 'c0556a52abecd66482c6c55978bc40c1da486477',
+318 silly install resolved        tarball: 'http://registry.npmjs.org/ng-file-upload/-/ng-file-upload-10.0.2.tgz' },
+318 silly install resolved     directories: {},
+318 silly install resolved     _resolved: 'https://registry.npmjs.org/ng-file-upload/-/ng-file-upload-10.0.2.tgz' },
+318 silly install resolved   { name: 'escape-html',
+318 silly install resolved     description: 'Escape string for use in HTML',
+318 silly install resolved     version: '1.0.3',
+318 silly install resolved     license: 'MIT',
+318 silly install resolved     keywords: [ 'escape', 'html', 'utility' ],
+318 silly install resolved     repository: { type: 'git', url: 'https://github.com/component/escape-html' },
+318 silly install resolved     devDependencies: { benchmark: '1.0.0', 'beautify-benchmark': '0.2.4' },
+318 silly install resolved     files: [ 'LICENSE', 'Readme.md', 'index.js' ],
+318 silly install resolved     scripts: { bench: 'node benchmark/index.js' },
+318 silly install resolved     gitHead: '7ac2ea3977fcac3d4c5be8d2a037812820c65f28',
+318 silly install resolved     bugs: { url: 'https://github.com/component/escape-html/issues' },
+318 silly install resolved     homepage: 'https://github.com/component/escape-html',
+318 silly install resolved     _id: 'escape-html@1.0.3',
+318 silly install resolved     _shasum: '0258eae4d3d0c0974de1c169188ef0051d1d1988',
+318 silly install resolved     _from: 'escape-html@>=1.0.3 <2.0.0',
+318 silly install resolved     _npmVersion: '1.4.28',
+318 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+318 silly install resolved     maintainers: [ [Object], [Object] ],
+318 silly install resolved     dist:
+318 silly install resolved      { shasum: '0258eae4d3d0c0974de1c169188ef0051d1d1988',
+318 silly install resolved        tarball: 'http://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz' },
+318 silly install resolved     directories: {},
+318 silly install resolved     _resolved: 'https://registry.npmjs.org/escape-html/-/escape-html-1.0.3.tgz' },
+318 silly install resolved   { name: 'negotiator',
+318 silly install resolved     description: 'HTTP content negotiation',
+318 silly install resolved     version: '0.6.0',
+318 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+318 silly install resolved     license: 'MIT',
+318 silly install resolved     keywords:
+318 silly install resolved      [ 'http',
+318 silly install resolved        'content negotiation',
+318 silly install resolved        'accept',
+318 silly install resolved        'accept-language',
+318 silly install resolved        'accept-encoding',
+318 silly install resolved        'accept-charset' ],
+318 silly install resolved     repository: { type: 'git', url: 'https://github.com/jshttp/negotiator' },
+318 silly install resolved     devDependencies: { istanbul: '0.3.21', mocha: '~1.21.5' },
+318 silly install resolved     files: [ 'lib/', 'HISTORY.md', 'LICENSE', 'index.js', 'README.md' ],
+318 silly install resolved     engines: { node: '>= 0.6' },
+318 silly install resolved     scripts:
+318 silly install resolved      { test: 'mocha --reporter spec --check-leaks --bail test/',
+318 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+318 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/' },
+318 silly install resolved     gitHead: 'd904ca6a639487b4e27c009e33183570aae4e789',
+318 silly install resolved     bugs: { url: 'https://github.com/jshttp/negotiator/issues' },
+318 silly install resolved     homepage: 'https://github.com/jshttp/negotiator',
+318 silly install resolved     _id: 'negotiator@0.6.0',
+318 silly install resolved     _shasum: '33593a5a2b0ce30c985840c6f56b6fb1ea9e3a55',
+318 silly install resolved     _from: 'negotiator@>=0.6.0 <0.7.0',
+318 silly install resolved     _npmVersion: '1.4.28',
+318 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+318 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+318 silly install resolved     dist:
+318 silly install resolved      { shasum: '33593a5a2b0ce30c985840c6f56b6fb1ea9e3a55',
+318 silly install resolved        tarball: 'http://registry.npmjs.org/negotiator/-/negotiator-0.6.0.tgz' },
+318 silly install resolved     directories: {},
+318 silly install resolved     _resolved: 'https://registry.npmjs.org/negotiator/-/negotiator-0.6.0.tgz' } ]
+319 info install debug@2.2.0 into /home/ayoub/africannonce
+320 info install mime-types@2.1.7 into /home/ayoub/africannonce
+321 info install http-errors@1.3.1 into /home/ayoub/africannonce
+322 info install ng-file-upload@10.0.2 into /home/ayoub/africannonce
+323 info install escape-html@1.0.3 into /home/ayoub/africannonce
+324 info install negotiator@0.6.0 into /home/ayoub/africannonce
+325 info installOne debug@2.2.0
+326 verbose installOne of debug to /home/ayoub/africannonce not in flight; installing
+327 info installOne mime-types@2.1.7
+328 verbose installOne of mime-types to /home/ayoub/africannonce not in flight; installing
+329 info installOne http-errors@1.3.1
+330 verbose installOne of http-errors to /home/ayoub/africannonce not in flight; installing
+331 info installOne ng-file-upload@10.0.2
+332 verbose installOne of ng-file-upload to /home/ayoub/africannonce not in flight; installing
+333 info installOne escape-html@1.0.3
+334 verbose installOne of escape-html to /home/ayoub/africannonce not in flight; installing
+335 info installOne negotiator@0.6.0
+336 verbose installOne of negotiator to /home/ayoub/africannonce not in flight; installing
+337 verbose lock using /home/ayoub/.npm/_locks/debug-ce27fe1fe7d5065f.lock for /home/ayoub/africannonce/node_modules/debug
+338 verbose lock using /home/ayoub/.npm/_locks/mime-types-b8b7d05900297a33.lock for /home/ayoub/africannonce/node_modules/mime-types
+339 verbose lock using /home/ayoub/.npm/_locks/http-errors-a176ba202f05c860.lock for /home/ayoub/africannonce/node_modules/http-errors
+340 verbose lock using /home/ayoub/.npm/_locks/ng-file-upload-810edcb43ecf537d.lock for /home/ayoub/africannonce/node_modules/ng-file-upload
+341 verbose lock using /home/ayoub/.npm/_locks/escape-html-1045ea7f150a44af.lock for /home/ayoub/africannonce/node_modules/escape-html
+342 verbose lock using /home/ayoub/.npm/_locks/negotiator-9851ac5dfbbf08d9.lock for /home/ayoub/africannonce/node_modules/negotiator
+343 silly install write writing debug 2.2.0 to /home/ayoub/africannonce/node_modules/debug
+344 silly install write writing mime-types 2.1.7 to /home/ayoub/africannonce/node_modules/mime-types
+345 silly install write writing http-errors 1.3.1 to /home/ayoub/africannonce/node_modules/http-errors
+346 silly install write writing ng-file-upload 10.0.2 to /home/ayoub/africannonce/node_modules/ng-file-upload
+347 silly install write writing escape-html 1.0.3 to /home/ayoub/africannonce/node_modules/escape-html
+348 silly install write writing negotiator 0.6.0 to /home/ayoub/africannonce/node_modules/negotiator
+349 verbose unbuild node_modules/debug
+350 verbose unbuild node_modules/mime-types
+351 verbose unbuild node_modules/http-errors
+352 verbose unbuild node_modules/ng-file-upload
+353 verbose unbuild node_modules/escape-html
+354 verbose unbuild node_modules/negotiator
+355 silly gentlyRm /home/ayoub/africannonce/node_modules/debug is being purged from base /home/ayoub/africannonce
+356 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/debug
+357 silly gentlyRm /home/ayoub/africannonce/node_modules/mime-types is being purged from base /home/ayoub/africannonce
+358 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/mime-types
+359 silly gentlyRm /home/ayoub/africannonce/node_modules/http-errors is being purged from base /home/ayoub/africannonce
+360 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/http-errors
+361 silly gentlyRm /home/ayoub/africannonce/node_modules/ng-file-upload is being purged from base /home/ayoub/africannonce
+362 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/ng-file-upload
+363 silly gentlyRm /home/ayoub/africannonce/node_modules/escape-html is being purged from base /home/ayoub/africannonce
+364 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/escape-html
+365 silly gentlyRm /home/ayoub/africannonce/node_modules/negotiator is being purged from base /home/ayoub/africannonce
+366 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/negotiator
+367 verbose tar unpack /home/ayoub/.npm/debug/2.2.0/package.tgz
+368 verbose tar unpacking to /home/ayoub/africannonce/node_modules/debug
+369 silly gentlyRm /home/ayoub/africannonce/node_modules/debug is being purged
+370 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/debug
+371 verbose tar unpack /home/ayoub/.npm/mime-types/2.1.7/package.tgz
+372 verbose tar unpacking to /home/ayoub/africannonce/node_modules/mime-types
+373 silly gentlyRm /home/ayoub/africannonce/node_modules/mime-types is being purged
+374 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/mime-types
+375 verbose tar unpack /home/ayoub/.npm/http-errors/1.3.1/package.tgz
+376 verbose tar unpacking to /home/ayoub/africannonce/node_modules/http-errors
+377 silly gentlyRm /home/ayoub/africannonce/node_modules/http-errors is being purged
+378 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/http-errors
+379 verbose tar unpack /home/ayoub/.npm/ng-file-upload/10.0.2/package.tgz
+380 verbose tar unpacking to /home/ayoub/africannonce/node_modules/ng-file-upload
+381 silly gentlyRm /home/ayoub/africannonce/node_modules/ng-file-upload is being purged
+382 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/ng-file-upload
+383 verbose tar unpack /home/ayoub/.npm/escape-html/1.0.3/package.tgz
+384 verbose tar unpacking to /home/ayoub/africannonce/node_modules/escape-html
+385 silly gentlyRm /home/ayoub/africannonce/node_modules/escape-html is being purged
+386 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/escape-html
+387 verbose tar unpack /home/ayoub/.npm/negotiator/0.6.0/package.tgz
+388 verbose tar unpacking to /home/ayoub/africannonce/node_modules/negotiator
+389 silly gentlyRm /home/ayoub/africannonce/node_modules/negotiator is being purged
+390 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/negotiator
+391 silly gunzTarPerm modes [ '775', '664' ]
+392 silly gunzTarPerm modes [ '775', '664' ]
+393 silly gunzTarPerm modes [ '775', '664' ]
+394 silly gunzTarPerm modes [ '775', '664' ]
+395 silly gunzTarPerm modes [ '775', '664' ]
+396 silly gunzTarPerm modes [ '775', '664' ]
+397 silly gunzTarPerm extractEntry package.json
+398 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+399 silly gunzTarPerm extractEntry package.json
+400 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+401 silly gunzTarPerm extractEntry package.json
+402 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+403 silly gunzTarPerm extractEntry package.json
+404 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+405 silly gunzTarPerm extractEntry .npmignore
+406 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+407 silly gunzTarPerm extractEntry node.js
+408 silly gunzTarPerm modified mode [ 'node.js', 420, 436 ]
+409 silly gunzTarPerm extractEntry .npmignore
+410 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+411 silly gunzTarPerm extractEntry README.md
+412 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+413 silly gunzTarPerm extractEntry LICENSE
+414 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+415 silly gunzTarPerm extractEntry index.js
+416 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+417 silly gunzTarPerm extractEntry README.md
+418 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+419 silly gunzTarPerm extractEntry LICENSE
+420 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+421 silly gunzTarPerm extractEntry package.json
+422 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+423 silly gunzTarPerm extractEntry README.md
+424 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+425 silly gunzTarPerm extractEntry LICENSE
+426 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+427 silly gunzTarPerm extractEntry package.json
+428 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+429 silly gunzTarPerm extractEntry Readme.md
+430 silly gunzTarPerm modified mode [ 'Readme.md', 438, 436 ]
+431 silly gunzTarPerm extractEntry debug.js
+432 silly gunzTarPerm modified mode [ 'debug.js', 420, 436 ]
+433 silly gunzTarPerm extractEntry browser.js
+434 silly gunzTarPerm modified mode [ 'browser.js', 420, 436 ]
+435 silly gunzTarPerm extractEntry LICENSE
+436 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+437 silly gunzTarPerm extractEntry index.js
+438 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+439 silly gunzTarPerm extractEntry HISTORY.md
+440 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+441 silly gunzTarPerm extractEntry README.md
+442 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+443 silly gunzTarPerm extractEntry LICENSE
+444 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+445 silly gunzTarPerm extractEntry index.js
+446 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+447 silly gunzTarPerm extractEntry HISTORY.md
+448 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+449 silly gunzTarPerm extractEntry Readme.md
+450 silly gunzTarPerm modified mode [ 'Readme.md', 420, 436 ]
+451 silly gunzTarPerm extractEntry Gruntfile.js
+452 silly gunzTarPerm modified mode [ 'Gruntfile.js', 420, 436 ]
+453 silly gunzTarPerm extractEntry index.js
+454 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+455 silly gunzTarPerm extractEntry demo/.idea/encodings.xml
+456 silly gunzTarPerm modified mode [ 'demo/.idea/encodings.xml', 420, 436 ]
+457 silly gunzTarPerm extractEntry lib/charset.js
+458 silly gunzTarPerm modified mode [ 'lib/charset.js', 438, 436 ]
+459 silly gunzTarPerm extractEntry index.js
+460 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+461 silly gunzTarPerm extractEntry HISTORY.md
+462 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+463 silly gunzTarPerm extractEntry demo/.idea/.name
+464 silly gunzTarPerm modified mode [ 'demo/.idea/.name', 420, 436 ]
+465 silly gunzTarPerm extractEntry demo/.idea/codeStyleSettings.xml
+466 silly gunzTarPerm modified mode [ 'demo/.idea/codeStyleSettings.xml', 420, 436 ]
+467 silly gunzTarPerm extractEntry bower.json
+468 silly gunzTarPerm modified mode [ 'bower.json', 420, 436 ]
+469 silly gunzTarPerm extractEntry .jshintrc
+470 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+471 silly gunzTarPerm extractEntry lib/encoding.js
+472 silly gunzTarPerm modified mode [ 'lib/encoding.js', 438, 436 ]
+473 silly gunzTarPerm extractEntry lib/language.js
+474 silly gunzTarPerm modified mode [ 'lib/language.js', 438, 436 ]
+475 silly gunzTarPerm extractEntry demo/.idea/compiler.xml
+476 silly gunzTarPerm modified mode [ 'demo/.idea/compiler.xml', 420, 436 ]
+477 silly gunzTarPerm extractEntry demo/.idea/copyright/profiles_settings.xml
+478 silly gunzTarPerm modified mode [ 'demo/.idea/copyright/profiles_settings.xml', 420, 436 ]
+479 silly gunzTarPerm extractEntry component.json
+480 silly gunzTarPerm modified mode [ 'component.json', 420, 436 ]
+481 silly gunzTarPerm extractEntry Makefile
+482 silly gunzTarPerm modified mode [ 'Makefile', 420, 436 ]
+483 silly gunzTarPerm extractEntry lib/mediaType.js
+484 silly gunzTarPerm modified mode [ 'lib/mediaType.js', 438, 436 ]
+485 silly gunzTarPerm extractEntry demo/.idea/artifacts/ng_file_upload_demo_server_war.xml
+486 silly gunzTarPerm modified mode [ 'demo/.idea/artifacts/ng_file_upload_demo_server_war.xml',
+486 silly gunzTarPerm   420,
+486 silly gunzTarPerm   436 ]
+487 silly gunzTarPerm extractEntry demo/.idea/artifacts/ng_file_upload_demo_server_war_exploded.xml
+488 silly gunzTarPerm modified mode [ 'demo/.idea/artifacts/ng_file_upload_demo_server_war_exploded.xml',
+488 silly gunzTarPerm   420,
+488 silly gunzTarPerm   436 ]
+489 verbose write writing to /home/ayoub/africannonce/node_modules/escape-html/package.json
+490 silly gunzTarPerm extractEntry History.md
+491 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+492 info preinstall escape-html@1.0.3
+493 silly gunzTarPerm extractEntry demo/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_9_18.xml
+494 silly gunzTarPerm modified mode [ 'demo/.idea/libraries/Maven__com_google_appengine_appengine_api_1_0_sdk_1_9_18.xml',
+494 silly gunzTarPerm   420,
+494 silly gunzTarPerm   436 ]
+495 silly gunzTarPerm extractEntry demo/.idea/libraries/Maven__com_google_appengine_appengine_endpoints_1_9_18.xml
+496 silly gunzTarPerm modified mode [ 'demo/.idea/libraries/Maven__com_google_appengine_appengine_endpoints_1_9_18.xml',
+496 silly gunzTarPerm   420,
+496 silly gunzTarPerm   436 ]
+497 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/escape-html/package.json
+498 silly gunzTarPerm extractEntry demo/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2.xml
+499 silly gunzTarPerm modified mode [ 'demo/.idea/libraries/Maven__commons_fileupload_commons_fileupload_1_2.xml',
+499 silly gunzTarPerm   420,
+499 silly gunzTarPerm   436 ]
+500 silly gunzTarPerm extractEntry demo/.idea/libraries/Maven__javax_inject_javax_inject_1.xml
+501 silly gunzTarPerm modified mode [ 'demo/.idea/libraries/Maven__javax_inject_javax_inject_1.xml',
+501 silly gunzTarPerm   420,
+501 silly gunzTarPerm   436 ]
+502 verbose write writing to /home/ayoub/africannonce/node_modules/mime-types/package.json
+503 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/escape-html/package.json
+504 info preinstall mime-types@2.1.7
+505 verbose write writing to /home/ayoub/africannonce/node_modules/http-errors/package.json
+506 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/mime-types/package.json
+507 info preinstall http-errors@1.3.1
+508 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/http-errors/package.json
+509 silly gunzTarPerm extractEntry demo/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml
+510 silly gunzTarPerm modified mode [ 'demo/.idea/libraries/Maven__javax_servlet_servlet_api_2_5.xml',
+510 silly gunzTarPerm   420,
+510 silly gunzTarPerm   436 ]
+511 silly gunzTarPerm extractEntry demo/.idea/misc.xml
+512 silly gunzTarPerm modified mode [ 'demo/.idea/misc.xml', 420, 436 ]
+513 silly prepareForInstallMany adding mime-db@~1.19.0 from mime-types dependencies
+514 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/mime-types/package.json
+515 silly install resolved []
+516 verbose about to build /home/ayoub/africannonce/node_modules/escape-html
+517 info build /home/ayoub/africannonce/node_modules/escape-html
+518 silly prepareForInstallMany adding inherits@~2.0.1 from http-errors dependencies
+519 silly prepareForInstallMany adding statuses@1 from http-errors dependencies
+520 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/http-errors/package.json
+521 silly gunzTarPerm extractEntry demo/.idea/modules.xml
+522 silly gunzTarPerm modified mode [ 'demo/.idea/modules.xml', 420, 436 ]
+523 silly gunzTarPerm extractEntry demo/.idea/vcs.xml
+524 silly gunzTarPerm modified mode [ 'demo/.idea/vcs.xml', 420, 436 ]
+525 silly cache add args [ 'mime-db@~1.19.0', null ]
+526 verbose cache add spec mime-db@~1.19.0
+527 silly cache add parsed spec Result {
+527 silly cache add   raw: 'mime-db@~1.19.0',
+527 silly cache add   scope: null,
+527 silly cache add   name: 'mime-db',
+527 silly cache add   rawSpec: '~1.19.0',
+527 silly cache add   spec: '>=1.19.0 <1.20.0',
+527 silly cache add   type: 'range' }
+528 silly addNamed mime-db@>=1.19.0 <1.20.0
+529 verbose addNamed ">=1.19.0 <1.20.0" is a valid semver range for mime-db
+530 silly addNameRange { name: 'mime-db', range: '>=1.19.0 <1.20.0', hasData: false }
+531 silly mapToRegistry name mime-db
+532 silly mapToRegistry using default registry
+533 silly mapToRegistry registry https://registry.npmjs.org/
+534 silly mapToRegistry uri https://registry.npmjs.org/mime-db
+535 verbose addNameRange registry:https://registry.npmjs.org/mime-db not in flight; fetching
+536 info linkStuff escape-html@1.0.3
+537 silly linkStuff escape-html@1.0.3 has /home/ayoub/africannonce/node_modules as its parent node_modules
+538 silly cache add args [ 'inherits@~2.0.1', null ]
+539 verbose cache add spec inherits@~2.0.1
+540 silly cache add args [ 'statuses@1', null ]
+541 verbose cache add spec statuses@1
+542 silly cache add parsed spec Result {
+542 silly cache add   raw: 'inherits@~2.0.1',
+542 silly cache add   scope: null,
+542 silly cache add   name: 'inherits',
+542 silly cache add   rawSpec: '~2.0.1',
+542 silly cache add   spec: '>=2.0.1 <2.1.0',
+542 silly cache add   type: 'range' }
+543 silly addNamed inherits@>=2.0.1 <2.1.0
+544 verbose addNamed ">=2.0.1 <2.1.0" is a valid semver range for inherits
+545 silly addNameRange { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: false }
+546 silly mapToRegistry name inherits
+547 silly mapToRegistry using default registry
+548 silly mapToRegistry registry https://registry.npmjs.org/
+549 silly mapToRegistry uri https://registry.npmjs.org/inherits
+550 verbose addNameRange registry:https://registry.npmjs.org/inherits not in flight; fetching
+551 silly cache add parsed spec Result {
+551 silly cache add   raw: 'statuses@1',
+551 silly cache add   scope: null,
+551 silly cache add   name: 'statuses',
+551 silly cache add   rawSpec: '1',
+551 silly cache add   spec: '>=1.0.0 <2.0.0',
+551 silly cache add   type: 'range' }
+552 silly addNamed statuses@>=1.0.0 <2.0.0
+553 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for statuses
+554 silly addNameRange { name: 'statuses', range: '>=1.0.0 <2.0.0', hasData: false }
+555 silly mapToRegistry name statuses
+556 silly mapToRegistry using default registry
+557 silly mapToRegistry registry https://registry.npmjs.org/
+558 silly mapToRegistry uri https://registry.npmjs.org/statuses
+559 verbose addNameRange registry:https://registry.npmjs.org/statuses not in flight; fetching
+560 silly gunzTarPerm extractEntry demo/.idea/workspace.xml
+561 silly gunzTarPerm modified mode [ 'demo/.idea/workspace.xml', 420, 436 ]
+562 silly gunzTarPerm extractEntry demo/C#/UploadController.js
+563 silly gunzTarPerm modified mode [ 'demo/C#/UploadController.js', 420, 436 ]
+564 verbose request uri https://registry.npmjs.org/inherits
+565 verbose request no auth needed
+566 info attempt registry request try #1 at 10:28:51
+567 verbose etag "83S1U6S25IVR6LLBMEY64SYT2"
+568 http request GET https://registry.npmjs.org/inherits
+569 verbose write writing to /home/ayoub/africannonce/node_modules/negotiator/package.json
+570 silly gunzTarPerm extractEntry demo/C#/UploadHandler.ashx
+571 silly gunzTarPerm modified mode [ 'demo/C#/UploadHandler.ashx', 420, 436 ]
+572 silly gunzTarPerm extractEntry demo/C#/UploadHandler.ashx.cs
+573 silly gunzTarPerm modified mode [ 'demo/C#/UploadHandler.ashx.cs', 420, 436 ]
+574 verbose linkBins escape-html@1.0.3
+575 verbose linkMans escape-html@1.0.3
+576 verbose rebuildBundles escape-html@1.0.3
+577 info install escape-html@1.0.3
+578 info preinstall negotiator@0.6.0
+579 info postinstall escape-html@1.0.3
+580 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/negotiator/package.json
+581 verbose unlock done using /home/ayoub/.npm/_locks/escape-html-1045ea7f150a44af.lock for /home/ayoub/africannonce/node_modules/escape-html
+582 verbose request uri https://registry.npmjs.org/mime-db
+583 verbose request no auth needed
+584 info attempt registry request try #1 at 10:28:51
+585 verbose etag "4FYJRNW3NOXTRWZRO9NX96C8V"
+586 http request GET https://registry.npmjs.org/mime-db
+587 silly gunzTarPerm extractEntry demo/pom.xml
+588 silly gunzTarPerm modified mode [ 'demo/pom.xml', 420, 436 ]
+589 silly gunzTarPerm extractEntry demo/src/main/java/com/df/angularfileupload/CORSFilter.java
+590 silly gunzTarPerm modified mode [ 'demo/src/main/java/com/df/angularfileupload/CORSFilter.java',
+590 silly gunzTarPerm   420,
+590 silly gunzTarPerm   436 ]
+591 verbose write writing to /home/ayoub/africannonce/node_modules/debug/package.json
+592 info preinstall debug@2.2.0
+593 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/negotiator/package.json
+594 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/debug/package.json
+595 silly gunzTarPerm extractEntry demo/src/main/java/com/df/angularfileupload/FileUpload.java
+596 silly gunzTarPerm modified mode [ 'demo/src/main/java/com/df/angularfileupload/FileUpload.java',
+596 silly gunzTarPerm   420,
+596 silly gunzTarPerm   436 ]
+597 silly gunzTarPerm extractEntry demo/src/main/java/com/df/angularfileupload/S3Signature.java
+598 silly gunzTarPerm modified mode [ 'demo/src/main/java/com/df/angularfileupload/S3Signature.java',
+598 silly gunzTarPerm   420,
+598 silly gunzTarPerm   436 ]
+599 silly prepareForInstallMany adding ms@0.7.1 from debug dependencies
+600 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/debug/package.json
+601 silly install resolved []
+602 verbose about to build /home/ayoub/africannonce/node_modules/negotiator
+603 info build /home/ayoub/africannonce/node_modules/negotiator
+604 silly gunzTarPerm extractEntry demo/src/main/resources/META-INF/jdoconfig.xml
+605 silly gunzTarPerm modified mode [ 'demo/src/main/resources/META-INF/jdoconfig.xml', 420, 436 ]
+606 silly gunzTarPerm extractEntry demo/src/main/resources/META-INF/persistence.xml
+607 silly gunzTarPerm modified mode [ 'demo/src/main/resources/META-INF/persistence.xml', 420, 436 ]
+608 verbose request uri https://registry.npmjs.org/statuses
+609 verbose request no auth needed
+610 info attempt registry request try #1 at 10:28:51
+611 verbose etag "DBWZSA8GI6L8CNTRFYQ7KFMMA"
+612 http request GET https://registry.npmjs.org/statuses
+613 silly cache add args [ 'ms@0.7.1', null ]
+614 verbose cache add spec ms@0.7.1
+615 silly cache add parsed spec Result {
+615 silly cache add   raw: 'ms@0.7.1',
+615 silly cache add   scope: null,
+615 silly cache add   name: 'ms',
+615 silly cache add   rawSpec: '0.7.1',
+615 silly cache add   spec: '0.7.1',
+615 silly cache add   type: 'version' }
+616 silly addNamed ms@0.7.1
+617 verbose addNamed "0.7.1" is a plain semver version for ms
+618 silly mapToRegistry name ms
+619 silly mapToRegistry using default registry
+620 silly mapToRegistry registry https://registry.npmjs.org/
+621 silly mapToRegistry uri https://registry.npmjs.org/ms
+622 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+623 info linkStuff negotiator@0.6.0
+624 silly linkStuff negotiator@0.6.0 has /home/ayoub/africannonce/node_modules as its parent node_modules
+625 verbose request uri https://registry.npmjs.org/ms
+626 verbose request no auth needed
+627 info attempt registry request try #1 at 10:28:51
+628 verbose etag "AKA0GMJ4J6JYK09086NRDWUM0"
+629 http request GET https://registry.npmjs.org/ms
+630 silly gunzTarPerm extractEntry demo/src/main/resources/log4j.properties
+631 silly gunzTarPerm modified mode [ 'demo/src/main/resources/log4j.properties', 420, 436 ]
+632 silly gunzTarPerm extractEntry demo/src/main/webapp/WEB-INF/appengine-web.xml
+633 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/WEB-INF/appengine-web.xml', 420, 436 ]
+634 silly gunzTarPerm extractEntry demo/src/main/webapp/WEB-INF/logging.properties
+635 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/WEB-INF/logging.properties', 420, 436 ]
+636 silly gunzTarPerm extractEntry demo/src/main/webapp/WEB-INF/web.xml
+637 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/WEB-INF/web.xml', 420, 436 ]
+638 verbose linkBins negotiator@0.6.0
+639 verbose linkMans negotiator@0.6.0
+640 verbose rebuildBundles negotiator@0.6.0
+641 info install negotiator@0.6.0
+642 info postinstall negotiator@0.6.0
+643 verbose unlock done using /home/ayoub/.npm/_locks/negotiator-9851ac5dfbbf08d9.lock for /home/ayoub/africannonce/node_modules/negotiator
+644 silly gunzTarPerm extractEntry demo/src/main/webapp/common.css
+645 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/common.css', 420, 436 ]
+646 silly gunzTarPerm extractEntry demo/src/main/webapp/crossdomain.xml
+647 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/crossdomain.xml', 420, 436 ]
+648 silly gunzTarPerm extractEntry demo/src/main/webapp/donate.html
+649 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/donate.html', 420, 436 ]
+650 silly gunzTarPerm extractEntry demo/src/main/webapp/favicon.ico
+651 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/favicon.ico', 420, 436 ]
+652 silly gunzTarPerm extractEntry demo/src/main/webapp/img/tea.jpg
+653 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/img/tea.jpg', 420, 436 ]
+654 silly gunzTarPerm extractEntry demo/src/main/webapp/img/tea.png
+655 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/img/tea.png', 420, 436 ]
+656 silly gunzTarPerm extractEntry demo/src/main/webapp/index.html
+657 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/index.html', 420, 436 ]
+658 silly gunzTarPerm extractEntry demo/src/main/webapp/js/upload.js
+659 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/upload.js', 420, 436 ]
+660 silly gunzTarPerm extractEntry demo/src/main/webapp/js/FileAPI.min.js
+661 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/FileAPI.min.js', 420, 436 ]
+662 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-file-upload-all.js
+663 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-file-upload-all.js', 420, 436 ]
+664 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-file-upload-all.min.js
+665 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-file-upload-all.min.js', 420, 436 ]
+666 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-file-upload-shim.js
+667 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-file-upload-shim.js', 420, 436 ]
+668 silly gunzTarPerm extractEntry demo/src/main/webapp/js/FileAPI.js
+669 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/FileAPI.js', 420, 436 ]
+670 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-file-upload.js
+671 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-file-upload.js', 420, 436 ]
+672 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-file-upload.min.js
+673 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-file-upload.min.js', 420, 436 ]
+674 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-img-crop.js
+675 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-img-crop.js', 493, 509 ]
+676 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-file-upload-shim.min.js
+677 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-file-upload-shim.min.js',
+677 silly gunzTarPerm   420,
+677 silly gunzTarPerm   436 ]
+678 silly gunzTarPerm extractEntry demo/src/main/webapp/js/ng-img-crop.css
+679 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/ng-img-crop.css', 493, 509 ]
+680 silly gunzTarPerm extractEntry demo/src/main/webapp/js/FileAPI.flash.swf
+681 silly gunzTarPerm modified mode [ 'demo/src/main/webapp/js/FileAPI.flash.swf', 420, 436 ]
+682 silly gunzTarPerm extractEntry demo/target/maven-archiver/pom.properties
+683 silly gunzTarPerm modified mode [ 'demo/target/maven-archiver/pom.properties', 420, 436 ]
+684 silly gunzTarPerm extractEntry demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+685 silly gunzTarPerm modified mode [ 'demo/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst',
+685 silly gunzTarPerm   420,
+685 silly gunzTarPerm   436 ]
+686 silly gunzTarPerm extractEntry demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+687 silly gunzTarPerm modified mode [ 'demo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst',
+687 silly gunzTarPerm   420,
+687 silly gunzTarPerm   436 ]
+688 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/META-INF/MANIFEST.MF
+689 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/META-INF/MANIFEST.MF',
+689 silly gunzTarPerm   420,
+689 silly gunzTarPerm   436 ]
+690 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/appengine-web.xml
+691 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/appengine-web.xml',
+691 silly gunzTarPerm   420,
+691 silly gunzTarPerm   436 ]
+692 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/META-INF/jdoconfig.xml
+693 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/META-INF/jdoconfig.xml',
+693 silly gunzTarPerm   420,
+693 silly gunzTarPerm   436 ]
+694 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/META-INF/persistence.xml
+695 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/META-INF/persistence.xml',
+695 silly gunzTarPerm   420,
+695 silly gunzTarPerm   436 ]
+696 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/CORSFilter.class
+697 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/CORSFilter.class',
+697 silly gunzTarPerm   420,
+697 silly gunzTarPerm   436 ]
+698 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/FileUpload$SizeEntry.class
+699 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/FileUpload$SizeEntry.class',
+699 silly gunzTarPerm   420,
+699 silly gunzTarPerm   436 ]
+700 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/FileUpload.class
+701 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/FileUpload.class',
+701 silly gunzTarPerm   420,
+701 silly gunzTarPerm   436 ]
+702 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/S3Signature.class
+703 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/com/df/angularfileupload/S3Signature.class',
+703 silly gunzTarPerm   420,
+703 silly gunzTarPerm   436 ]
+704 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/log4j.properties
+705 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/classes/log4j.properties',
+705 silly gunzTarPerm   420,
+705 silly gunzTarPerm   436 ]
+706 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/logging.properties
+707 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/logging.properties',
+707 silly gunzTarPerm   420,
+707 silly gunzTarPerm   436 ]
+708 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/web.xml
+709 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/WEB-INF/web.xml',
+709 silly gunzTarPerm   420,
+709 silly gunzTarPerm   436 ]
+710 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/common.css
+711 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/common.css',
+711 silly gunzTarPerm   420,
+711 silly gunzTarPerm   436 ]
+712 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/crossdomain.xml
+713 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/crossdomain.xml',
+713 silly gunzTarPerm   420,
+713 silly gunzTarPerm   436 ]
+714 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/donate.html
+715 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/donate.html',
+715 silly gunzTarPerm   420,
+715 silly gunzTarPerm   436 ]
+716 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/favicon.ico
+717 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/favicon.ico',
+717 silly gunzTarPerm   420,
+717 silly gunzTarPerm   436 ]
+718 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/img/tea.jpg
+719 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/img/tea.jpg',
+719 silly gunzTarPerm   420,
+719 silly gunzTarPerm   436 ]
+720 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/img/tea.png
+721 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/img/tea.png',
+721 silly gunzTarPerm   420,
+721 silly gunzTarPerm   436 ]
+722 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/index.html
+723 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/index.html',
+723 silly gunzTarPerm   420,
+723 silly gunzTarPerm   436 ]
+724 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/upload.js
+725 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/upload.js',
+725 silly gunzTarPerm   420,
+725 silly gunzTarPerm   436 ]
+726 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.min.js
+727 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.min.js',
+727 silly gunzTarPerm   420,
+727 silly gunzTarPerm   436 ]
+728 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-all.js
+729 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-all.js',
+729 silly gunzTarPerm   420,
+729 silly gunzTarPerm   436 ]
+730 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-all.min.js
+731 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-all.min.js',
+731 silly gunzTarPerm   420,
+731 silly gunzTarPerm   436 ]
+732 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-shim.js
+733 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-shim.js',
+733 silly gunzTarPerm   420,
+733 silly gunzTarPerm   436 ]
+734 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.js
+735 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.js',
+735 silly gunzTarPerm   420,
+735 silly gunzTarPerm   436 ]
+736 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload.js
+737 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload.js',
+737 silly gunzTarPerm   420,
+737 silly gunzTarPerm   436 ]
+738 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload.min.js
+739 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload.min.js',
+739 silly gunzTarPerm   420,
+739 silly gunzTarPerm   436 ]
+740 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-img-crop.js
+741 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-img-crop.js',
+741 silly gunzTarPerm   493,
+741 silly gunzTarPerm   509 ]
+742 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-shim.min.js
+743 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-file-upload-shim.min.js',
+743 silly gunzTarPerm   420,
+743 silly gunzTarPerm   436 ]
+744 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/ng-img-crop.css
+745 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/ng-img-crop.css',
+745 silly gunzTarPerm   493,
+745 silly gunzTarPerm   509 ]
+746 silly gunzTarPerm extractEntry demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.flash.swf
+747 silly gunzTarPerm modified mode [ 'demo/target/ng-file-upload-demo-server-0.0.1/js/FileAPI.flash.swf',
+747 silly gunzTarPerm   420,
+747 silly gunzTarPerm   436 ]
+748 silly gunzTarPerm extractEntry .jshintrc
+749 silly gunzTarPerm modified mode [ '.jshintrc', 420, 436 ]
+750 silly gunzTarPerm extractEntry dist/FileAPI.js
+751 silly gunzTarPerm modified mode [ 'dist/FileAPI.js', 420, 436 ]
+752 silly gunzTarPerm extractEntry dist/FileAPI.min.js
+753 silly gunzTarPerm modified mode [ 'dist/FileAPI.min.js', 420, 436 ]
+754 silly gunzTarPerm extractEntry dist/ng-file-upload-all.js
+755 silly gunzTarPerm modified mode [ 'dist/ng-file-upload-all.js', 420, 436 ]
+756 silly gunzTarPerm extractEntry dist/ng-file-upload-all.min.js
+757 silly gunzTarPerm modified mode [ 'dist/ng-file-upload-all.min.js', 420, 436 ]
+758 silly gunzTarPerm extractEntry dist/ng-file-upload-shim.js
+759 silly gunzTarPerm modified mode [ 'dist/ng-file-upload-shim.js', 420, 436 ]
+760 silly gunzTarPerm extractEntry dist/ng-file-upload-shim.min.js
+761 silly gunzTarPerm modified mode [ 'dist/ng-file-upload-shim.min.js', 420, 436 ]
+762 silly gunzTarPerm extractEntry dist/ng-file-upload.js
+763 silly gunzTarPerm modified mode [ 'dist/ng-file-upload.js', 420, 436 ]
+764 silly gunzTarPerm extractEntry dist/ng-file-upload.min.js
+765 silly gunzTarPerm modified mode [ 'dist/ng-file-upload.min.js', 420, 436 ]
+766 silly gunzTarPerm extractEntry dist/FileAPI.flash.swf
+767 silly gunzTarPerm modified mode [ 'dist/FileAPI.flash.swf', 420, 436 ]
+768 silly gunzTarPerm extractEntry src/validate.js
+769 silly gunzTarPerm modified mode [ 'src/validate.js', 420, 436 ]
+770 silly gunzTarPerm extractEntry src/drop.js
+771 silly gunzTarPerm modified mode [ 'src/drop.js', 420, 436 ]
+772 silly gunzTarPerm extractEntry src/exif.js
+773 silly gunzTarPerm modified mode [ 'src/exif.js', 420, 436 ]
+774 silly gunzTarPerm extractEntry src/model.js
+775 silly gunzTarPerm modified mode [ 'src/model.js', 420, 436 ]
+776 silly gunzTarPerm extractEntry src/data-url.js
+777 silly gunzTarPerm modified mode [ 'src/data-url.js', 420, 436 ]
+778 silly gunzTarPerm extractEntry src/select.js
+779 silly gunzTarPerm modified mode [ 'src/select.js', 420, 436 ]
+780 silly gunzTarPerm extractEntry src/shim-elem.js
+781 silly gunzTarPerm modified mode [ 'src/shim-elem.js', 420, 436 ]
+782 silly gunzTarPerm extractEntry src/shim-filereader.js
+783 silly gunzTarPerm modified mode [ 'src/shim-filereader.js', 420, 436 ]
+784 silly gunzTarPerm extractEntry src/shim-upload.js
+785 silly gunzTarPerm modified mode [ 'src/shim-upload.js', 420, 436 ]
+786 silly gunzTarPerm extractEntry src/upload.js
+787 silly gunzTarPerm modified mode [ 'src/upload.js', 420, 436 ]
+788 silly gunzTarPerm extractEntry src/FileAPI.js
+789 silly gunzTarPerm modified mode [ 'src/FileAPI.js', 420, 436 ]
+790 silly gunzTarPerm extractEntry src/resize.js
+791 silly gunzTarPerm modified mode [ 'src/resize.js', 420, 436 ]
+792 silly gunzTarPerm extractEntry src/FileAPI.flash.swf
+793 silly gunzTarPerm modified mode [ 'src/FileAPI.flash.swf', 416, 436 ]
+794 silly gunzTarPerm extractEntry nuget/NuGet.exe
+795 silly gunzTarPerm modified mode [ 'nuget/NuGet.exe', 416, 436 ]
+796 silly gunzTarPerm extractEntry nuget/Package.nuspec
+797 silly gunzTarPerm modified mode [ 'nuget/Package.nuspec', 420, 436 ]
+798 silly gunzTarPerm extractEntry nuget/build.bat
+799 silly gunzTarPerm modified mode [ 'nuget/build.bat', 420, 436 ]
+800 silly gunzTarPerm extractEntry nuget/nuget.sh
+801 silly gunzTarPerm modified mode [ 'nuget/nuget.sh', 493, 509 ]
+802 silly gunzTarPerm extractEntry release.sh
+803 silly gunzTarPerm modified mode [ 'release.sh', 493, 509 ]
+804 silly gunzTarPerm extractEntry test/.bowerrc
+805 silly gunzTarPerm modified mode [ 'test/.bowerrc', 420, 436 ]
+806 silly gunzTarPerm extractEntry test/bower.json
+807 silly gunzTarPerm modified mode [ 'test/bower.json', 420, 436 ]
+808 silly gunzTarPerm extractEntry test/index.html
+809 silly gunzTarPerm modified mode [ 'test/index.html', 420, 436 ]
+810 silly gunzTarPerm extractEntry test/spec/test.js
+811 silly gunzTarPerm modified mode [ 'test/spec/test.js', 420, 436 ]
+812 http 304 https://registry.npmjs.org/inherits
+813 silly get cb [ 304,
+813 silly get   { date: 'Thu, 12 Nov 2015 10:28:57 GMT',
+813 silly get     via: '1.1 varnish',
+813 silly get     'cache-control': 'max-age=60',
+813 silly get     etag: '"83S1U6S25IVR6LLBMEY64SYT2"',
+813 silly get     age: '21',
+813 silly get     connection: 'keep-alive',
+813 silly get     'x-served-by': 'cache-fra1243-FRA',
+813 silly get     'x-cache': 'HIT',
+813 silly get     'x-cache-hits': '6',
+813 silly get     'x-timer': 'S1447324137.255072,VS0,VE0',
+813 silly get     vary: 'Accept' } ]
+814 verbose etag https://registry.npmjs.org/inherits from cache
+815 verbose get saving inherits to /home/ayoub/.npm/registry.npmjs.org/inherits/.cache.json
+816 silly addNameRange number 2 { name: 'inherits', range: '>=2.0.1 <2.1.0', hasData: true }
+817 silly addNameRange versions [ 'inherits', [ '1.0.0', '2.0.0', '2.0.1', '1.0.1', '1.0.2' ] ]
+818 silly addNamed inherits@2.0.1
+819 verbose addNamed "2.0.1" is a plain semver version for inherits
+820 silly cache afterAdd inherits@2.0.1
+821 verbose afterAdd /home/ayoub/.npm/inherits/2.0.1/package/package.json not in flight; writing
+822 http 304 https://registry.npmjs.org/ms
+823 silly get cb [ 304,
+823 silly get   { date: 'Thu, 12 Nov 2015 10:28:57 GMT',
+823 silly get     via: '1.1 varnish',
+823 silly get     'cache-control': 'max-age=60',
+823 silly get     etag: '"AKA0GMJ4J6JYK09086NRDWUM0"',
+823 silly get     age: '26',
+823 silly get     connection: 'keep-alive',
+823 silly get     'x-served-by': 'cache-fra1230-FRA',
+823 silly get     'x-cache': 'HIT',
+823 silly get     'x-cache-hits': '3',
+823 silly get     'x-timer': 'S1447324137.288268,VS0,VE0',
+823 silly get     vary: 'Accept' } ]
+824 verbose etag https://registry.npmjs.org/ms from cache
+825 verbose get saving ms to /home/ayoub/.npm/registry.npmjs.org/ms/.cache.json
+826 verbose afterAdd /home/ayoub/.npm/inherits/2.0.1/package/package.json written
+827 silly cache afterAdd ms@0.7.1
+828 verbose afterAdd /home/ayoub/.npm/ms/0.7.1/package/package.json not in flight; writing
+829 verbose afterAdd /home/ayoub/.npm/ms/0.7.1/package/package.json written
+830 silly install resolved [ { name: 'ms',
+830 silly install resolved     version: '0.7.1',
+830 silly install resolved     description: 'Tiny ms conversion utility',
+830 silly install resolved     repository: { type: 'git', url: 'git://github.com/guille/ms.js.git' },
+830 silly install resolved     main: './index',
+830 silly install resolved     devDependencies: { mocha: '*', 'expect.js': '*', serve: '*' },
+830 silly install resolved     component: { scripts: [Object] },
+830 silly install resolved     gitHead: '713dcf26d9e6fd9dbc95affe7eff9783b7f1b909',
+830 silly install resolved     bugs: { url: 'https://github.com/guille/ms.js/issues' },
+830 silly install resolved     homepage: 'https://github.com/guille/ms.js',
+830 silly install resolved     _id: 'ms@0.7.1',
+830 silly install resolved     scripts: {},
+830 silly install resolved     _shasum: '9cd13c03adbff25b65effde7ce864ee952017098',
+830 silly install resolved     _from: 'ms@0.7.1',
+830 silly install resolved     _npmVersion: '2.7.5',
+830 silly install resolved     _nodeVersion: '0.12.2',
+830 silly install resolved     _npmUser: { name: 'rauchg', email: 'rauchg@gmail.com' },
+830 silly install resolved     maintainers: [ [Object] ],
+830 silly install resolved     dist:
+830 silly install resolved      { shasum: '9cd13c03adbff25b65effde7ce864ee952017098',
+830 silly install resolved        tarball: 'http://registry.npmjs.org/ms/-/ms-0.7.1.tgz' },
+830 silly install resolved     directories: {},
+830 silly install resolved     _resolved: 'https://registry.npmjs.org/ms/-/ms-0.7.1.tgz',
+830 silly install resolved     readme: 'ERROR: No README data found!' } ]
+831 info install ms@0.7.1 into /home/ayoub/africannonce/node_modules/debug
+832 info installOne ms@0.7.1
+833 verbose installOne of ms to /home/ayoub/africannonce/node_modules/debug not in flight; installing
+834 verbose lock using /home/ayoub/.npm/_locks/ms-f3fbf514e969018e.lock for /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+835 silly install write writing ms 0.7.1 to /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+836 verbose unbuild node_modules/debug/node_modules/ms
+837 silly gentlyRm /home/ayoub/africannonce/node_modules/debug/node_modules/ms is being purged from base /home/ayoub/africannonce
+838 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+839 verbose tar unpack /home/ayoub/.npm/ms/0.7.1/package.tgz
+840 verbose tar unpacking to /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+841 silly gentlyRm /home/ayoub/africannonce/node_modules/debug/node_modules/ms is being purged
+842 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+843 silly gunzTarPerm modes [ '775', '664' ]
+844 silly gunzTarPerm extractEntry package.json
+845 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+846 silly gunzTarPerm extractEntry .npmignore
+847 silly gunzTarPerm modified mode [ '.npmignore', 420, 436 ]
+848 silly gunzTarPerm extractEntry README.md
+849 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+850 silly gunzTarPerm extractEntry LICENSE
+851 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+852 silly gunzTarPerm extractEntry index.js
+853 silly gunzTarPerm modified mode [ 'index.js', 420, 436 ]
+854 silly gunzTarPerm extractEntry History.md
+855 silly gunzTarPerm modified mode [ 'History.md', 420, 436 ]
+856 verbose write writing to /home/ayoub/africannonce/node_modules/debug/node_modules/ms/package.json
+857 info preinstall ms@0.7.1
+858 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/debug/node_modules/ms/package.json
+859 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/debug/node_modules/ms/package.json
+860 silly install resolved []
+861 verbose about to build /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+862 info build /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+863 info linkStuff ms@0.7.1
+864 silly linkStuff ms@0.7.1 has /home/ayoub/africannonce/node_modules/debug/node_modules as its parent node_modules
+865 verbose linkBins ms@0.7.1
+866 verbose linkMans ms@0.7.1
+867 verbose rebuildBundles ms@0.7.1
+868 info install ms@0.7.1
+869 info postinstall ms@0.7.1
+870 verbose unlock done using /home/ayoub/.npm/_locks/ms-f3fbf514e969018e.lock for /home/ayoub/africannonce/node_modules/debug/node_modules/ms
+871 verbose about to build /home/ayoub/africannonce/node_modules/debug
+872 info build /home/ayoub/africannonce/node_modules/debug
+873 info linkStuff debug@2.2.0
+874 silly linkStuff debug@2.2.0 has /home/ayoub/africannonce/node_modules as its parent node_modules
+875 verbose linkBins debug@2.2.0
+876 verbose linkMans debug@2.2.0
+877 verbose rebuildBundles debug@2.2.0
+878 verbose rebuildBundles [ 'ms' ]
+879 info install debug@2.2.0
+880 info postinstall debug@2.2.0
+881 verbose unlock done using /home/ayoub/.npm/_locks/debug-ce27fe1fe7d5065f.lock for /home/ayoub/africannonce/node_modules/debug
+882 http 200 https://registry.npmjs.org/statuses
+883 silly get cb [ 200,
+883 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+883 silly get     etag: '"H1Q3PFJ8YNW59N54W2R9543S"',
+883 silly get     'content-type': 'application/json',
+883 silly get     'cache-control': 'max-age=60',
+883 silly get     'content-length': '14673',
+883 silly get     'accept-ranges': 'bytes',
+883 silly get     date: 'Thu, 12 Nov 2015 10:28:57 GMT',
+883 silly get     via: '1.1 varnish',
+883 silly get     age: '0',
+883 silly get     connection: 'keep-alive',
+883 silly get     'x-served-by': 'cache-fra1245-FRA',
+883 silly get     'x-cache': 'HIT',
+883 silly get     'x-cache-hits': '1',
+883 silly get     'x-timer': 'S1447324137.274986,VS0,VE34',
+883 silly get     vary: 'Accept' } ]
+884 verbose get saving statuses to /home/ayoub/.npm/registry.npmjs.org/statuses/.cache.json
+885 silly addNameRange number 2 { name: 'statuses', range: '>=1.0.0 <2.0.0', hasData: true }
+886 silly addNameRange versions [ 'statuses',
+886 silly addNameRange   [ '1.0.1',
+886 silly addNameRange     '1.0.2',
+886 silly addNameRange     '1.0.3',
+886 silly addNameRange     '1.0.4',
+886 silly addNameRange     '1.1.0',
+886 silly addNameRange     '1.1.1',
+886 silly addNameRange     '1.2.0',
+886 silly addNameRange     '1.2.1' ] ]
+887 silly addNamed statuses@1.2.1
+888 verbose addNamed "1.2.1" is a plain semver version for statuses
+889 silly cache afterAdd statuses@1.2.1
+890 verbose afterAdd /home/ayoub/.npm/statuses/1.2.1/package/package.json not in flight; writing
+891 verbose afterAdd /home/ayoub/.npm/statuses/1.2.1/package/package.json written
+892 silly install resolved [ { name: 'inherits',
+892 silly install resolved     description: 'Browser-friendly inheritance fully compatible with standard node.js inherits()',
+892 silly install resolved     version: '2.0.1',
+892 silly install resolved     keywords:
+892 silly install resolved      [ 'inheritance',
+892 silly install resolved        'class',
+892 silly install resolved        'klass',
+892 silly install resolved        'oop',
+892 silly install resolved        'object-oriented',
+892 silly install resolved        'inherits',
+892 silly install resolved        'browser',
+892 silly install resolved        'browserify' ],
+892 silly install resolved     main: './inherits.js',
+892 silly install resolved     browser: './inherits_browser.js',
+892 silly install resolved     repository: { type: 'git', url: 'git://github.com/isaacs/inherits.git' },
+892 silly install resolved     license: 'ISC',
+892 silly install resolved     scripts: { test: 'node test' },
+892 silly install resolved     readme: 'Browser-friendly inheritance fully compatible with standard node.js\n[inherits](http://nodejs.org/api/util.html#util_util_inherits_constructor_superconstructor).\n\nThis package exports standard `inherits` from node.js `util` module in\nnode environment, but also provides alternative browser-friendly\nimplementation through [browser\nfield](https://gist.github.com/shtylman/4339901). Alternative\nimplementation is a literal copy of standard one located in standalone\nmodule to avoid requiring of `util`. It also has a shim for old\nbrowsers with no `Object.create` support.\n\nWhile keeping you sure you are using standard `inherits`\nimplementation in node.js environment, it allows bundlers such as\n[browserify](https://github.com/substack/node-browserify) to not\ninclude full `util` package to your client code if all you need is\njust `inherits` function. It worth, because browser shim for `util`\npackage is large and `inherits` is often the single function you need\nfrom it.\n\nIt\'s recommended to use this package instead of\n`require(\'util\').inherits` for any code that has chances to be used\nnot only in node.js but in browser too.\n\n## usage\n\n```js\nvar inherits = require(\'inherits\');\n// then use exactly as the standard one\n```\n\n## note on version ~1.0\n\nVersion ~1.0 had completely different motivation and is not compatible\nneither with 2.0 nor with standard node.js `inherits`.\n\nIf you are using version ~1.0 and planning to switch to ~2.0, be\ncareful:\n\n* new version uses `super_` instead of `super` for referencing\n  superclass\n* new version overwrites current prototype while old one preserves any\n  existing fields on it\n',
+892 silly install resolved     readmeFilename: 'README.md',
+892 silly install resolved     bugs: { url: 'https://github.com/isaacs/inherits/issues' },
+892 silly install resolved     homepage: 'https://github.com/isaacs/inherits#readme',
+892 silly install resolved     _id: 'inherits@2.0.1',
+892 silly install resolved     _shasum: 'b17d08d326b4423e568eff719f91b0b1cbdf69f1',
+892 silly install resolved     _resolved: 'https://registry.npmjs.org/inherits/-/inherits-2.0.1.tgz',
+892 silly install resolved     _from: 'inherits@>=2.0.1 <2.1.0' },
+892 silly install resolved   { name: 'statuses',
+892 silly install resolved     description: 'HTTP status utility',
+892 silly install resolved     version: '1.2.1',
+892 silly install resolved     author:
+892 silly install resolved      { name: 'Jonathan Ong',
+892 silly install resolved        email: 'me@jongleberry.com',
+892 silly install resolved        url: 'http://jongleberry.com' },
+892 silly install resolved     repository:
+892 silly install resolved      { type: 'git',
+892 silly install resolved        url: 'git+https://github.com/jshttp/statuses.git' },
+892 silly install resolved     license: 'MIT',
+892 silly install resolved     keywords: [ 'http', 'status', 'code' ],
+892 silly install resolved     files: [ 'index.js', 'codes.json', 'LICENSE' ],
+892 silly install resolved     devDependencies:
+892 silly install resolved      { 'csv-parse': '0.0.6',
+892 silly install resolved        istanbul: '0',
+892 silly install resolved        mocha: '1',
+892 silly install resolved        'stream-to-array': '2' },
+892 silly install resolved     scripts:
+892 silly install resolved      { build: 'node scripts/build.js',
+892 silly install resolved        update: 'node scripts/update.js',
+892 silly install resolved        test: 'mocha --reporter spec --bail --check-leaks',
+892 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks',
+892 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks' },
+892 silly install resolved     readme: '# Statuses\n\n[![NPM Version][npm-image]][npm-url]\n[![NPM Downloads][downloads-image]][downloads-url]\n[![Node.js Version][node-version-image]][node-version-url]\n[![Build Status][travis-image]][travis-url]\n[![Test Coverage][coveralls-image]][coveralls-url]\n\nHTTP status utility for node.\n\n## API\n\n```js\nvar status = require(\'statuses\');\n```\n\n### var code = status(Integer || String)\n\nIf `Integer` or `String` is a valid HTTP code or status message, then the appropriate `code` will be returned. Otherwise, an error will be thrown.\n\n```js\nstatus(403) // => \'Forbidden\'\nstatus(\'403\') // => \'Forbidden\'\nstatus(\'forbidden\') // => 403\nstatus(\'Forbidden\') // => 403\nstatus(306) // throws, as it\'s not supported by node.js\n```\n\n### status.codes\n\nReturns an array of all the status codes as `Integer`s.\n\n### var msg = status[code]\n\nMap of `code` to `status message`. `undefined` for invalid `code`s.\n\n```js\nstatus[404] // => \'Not Found\'\n```\n\n### var code = status[msg]\n\nMap of `status message` to `code`. `msg` can either be title-cased or lower-cased. `undefined` for invalid `status message`s.\n\n```js\nstatus[\'not found\'] // => 404\nstatus[\'Not Found\'] // => 404\n```\n\n### status.redirect[code]\n\nReturns `true` if a status code is a valid redirect status.\n\n```js\nstatus.redirect[200] // => undefined\nstatus.redirect[301] // => true\n```\n\n### status.empty[code]\n\nReturns `true` if a status code expects an empty body.\n\n```js\nstatus.empty[200] // => undefined\nstatus.empty[204] // => true\nstatus.empty[304] // => true\n```\n\n### status.retry[code]\n\nReturns `true` if you should retry the rest.\n\n```js\nstatus.retry[501] // => undefined\nstatus.retry[503] // => true\n```\n\n### statuses/codes.json\n\n```js\nvar codes = require(\'statuses/codes.json\');\n```\n\nThis is a JSON file of the status codes\ntaken from `require(\'http\').STATUS_CODES`.\nThis is saved so that codes are consistent even in older node.js versions.\nFor example, `308` will be added in v0.12.\n\n## Adding Status Codes\n\nThe status codes are primarily sourced from http://www.iana.org/assignments/http-status-codes/http-status-codes-1.csv.\nAdditionally, custom codes are added from http://en.wikipedia.org/wiki/List_of_HTTP_status_codes.\nThese are added manually in the `lib/*.json` files.\nIf you would like to add a status code, add it to the appropriate JSON file.\n\nTo rebuild `codes.json`, run the following:\n\n```bash\n# update src/iana.json\nnpm run update\n# build codes.json\nnpm run build\n```\n\n[npm-image]: https://img.shields.io/npm/v/statuses.svg?style=flat\n[npm-url]: https://npmjs.org/package/statuses\n[node-version-image]: http://img.shields.io/badge/node.js-%3E%3D_0.6-brightgreen.svg?style=flat\n[node-version-url]: http://nodejs.org/download/\n[travis-image]: https://img.shields.io/travis/jshttp/statuses.svg?style=flat\n[travis-url]: https://travis-ci.org/jshttp/statuses\n[coveralls-image]: https://img.shields.io/coveralls/jshttp/statuses.svg?style=flat\n[coveralls-url]: https://coveralls.io/r/jshttp/statuses?branch=master\n[downloads-image]: http://img.shields.io/npm/dm/statuses.svg?style=flat\n[downloads-url]: https://npmjs.org/package/statuses\n',
+892 silly install resolved     readmeFilename: 'README.md',
+892 silly install resolved     bugs: { url: 'https://github.com/jshttp/statuses/issues' },
+892 silly install resolved     homepage: 'https://github.com/jshttp/statuses#readme',
+892 silly install resolved     _id: 'statuses@1.2.1',
+892 silly install resolved     _shasum: 'dded45cc18256d51ed40aec142489d5c61026d28',
+892 silly install resolved     _resolved: 'https://registry.npmjs.org/statuses/-/statuses-1.2.1.tgz',
+892 silly install resolved     _from: 'statuses@>=1.0.0 <2.0.0' } ]
+893 info install inherits@2.0.1 into /home/ayoub/africannonce/node_modules/http-errors
+894 info install statuses@1.2.1 into /home/ayoub/africannonce/node_modules/http-errors
+895 info installOne inherits@2.0.1
+896 verbose installOne of inherits to /home/ayoub/africannonce/node_modules/http-errors not in flight; installing
+897 info installOne statuses@1.2.1
+898 verbose installOne of statuses to /home/ayoub/africannonce/node_modules/http-errors not in flight; installing
+899 verbose lock using /home/ayoub/.npm/_locks/inherits-4ee3800b3b9d436c.lock for /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+900 verbose lock using /home/ayoub/.npm/_locks/statuses-afac7669253f986b.lock for /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+901 silly install write writing inherits 2.0.1 to /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+902 silly install write writing statuses 1.2.1 to /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+903 verbose unbuild node_modules/http-errors/node_modules/inherits
+904 verbose unbuild node_modules/http-errors/node_modules/statuses
+905 silly gentlyRm /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits is being purged from base /home/ayoub/africannonce
+906 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+907 silly gentlyRm /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses is being purged from base /home/ayoub/africannonce
+908 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+909 verbose tar unpack /home/ayoub/.npm/inherits/2.0.1/package.tgz
+910 verbose tar unpacking to /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+911 silly gentlyRm /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits is being purged
+912 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+913 verbose tar unpack /home/ayoub/.npm/statuses/1.2.1/package.tgz
+914 verbose tar unpacking to /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+915 silly gentlyRm /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses is being purged
+916 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+917 silly gunzTarPerm modes [ '775', '664' ]
+918 silly gunzTarPerm modes [ '775', '664' ]
+919 silly gunzTarPerm extractEntry package.json
+920 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+921 silly gunzTarPerm extractEntry package.json
+922 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+923 silly gunzTarPerm extractEntry README.md
+924 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+925 silly gunzTarPerm extractEntry LICENSE
+926 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+927 silly gunzTarPerm extractEntry README.md
+928 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+929 silly gunzTarPerm extractEntry LICENSE
+930 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+931 silly gunzTarPerm extractEntry inherits.js
+932 silly gunzTarPerm modified mode [ 'inherits.js', 420, 436 ]
+933 silly gunzTarPerm extractEntry inherits_browser.js
+934 silly gunzTarPerm modified mode [ 'inherits_browser.js', 420, 436 ]
+935 silly gunzTarPerm extractEntry index.js
+936 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+937 silly gunzTarPerm extractEntry codes.json
+938 silly gunzTarPerm modified mode [ 'codes.json', 438, 436 ]
+939 silly gunzTarPerm extractEntry test.js
+940 silly gunzTarPerm modified mode [ 'test.js', 420, 436 ]
+941 verbose write writing to /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses/package.json
+942 http 200 https://registry.npmjs.org/mime-db
+943 silly get cb [ 200,
+943 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+943 silly get     etag: '"A26I4ICKV8KDCI7NEIX006LBM"',
+943 silly get     'content-type': 'application/json',
+943 silly get     'cache-control': 'max-age=60',
+943 silly get     'content-length': '55577',
+943 silly get     'accept-ranges': 'bytes',
+943 silly get     date: 'Thu, 12 Nov 2015 10:28:57 GMT',
+943 silly get     via: '1.1 varnish',
+943 silly get     age: '21',
+943 silly get     connection: 'keep-alive',
+943 silly get     'x-served-by': 'cache-fra1231-FRA',
+943 silly get     'x-cache': 'HIT',
+943 silly get     'x-cache-hits': '3',
+943 silly get     'x-timer': 'S1447324137.261788,VS0,VE0',
+943 silly get     vary: 'Accept' } ]
+944 verbose get saving mime-db to /home/ayoub/.npm/registry.npmjs.org/mime-db/.cache.json
+945 verbose write writing to /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits/package.json
+946 info preinstall statuses@1.2.1
+947 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses/package.json
+948 info preinstall inherits@2.0.1
+949 silly addNameRange number 2 { name: 'mime-db', range: '>=1.19.0 <1.20.0', hasData: true }
+950 silly addNameRange versions [ 'mime-db',
+950 silly addNameRange   [ '0.0.0',
+950 silly addNameRange     '1.0.0',
+950 silly addNameRange     '1.0.1',
+950 silly addNameRange     '1.0.2',
+950 silly addNameRange     '1.0.3',
+950 silly addNameRange     '1.1.0',
+950 silly addNameRange     '1.1.1',
+950 silly addNameRange     '1.1.2',
+950 silly addNameRange     '1.2.0',
+950 silly addNameRange     '1.3.0',
+950 silly addNameRange     '1.3.1',
+950 silly addNameRange     '1.4.0',
+950 silly addNameRange     '1.5.0',
+950 silly addNameRange     '1.6.0',
+950 silly addNameRange     '1.6.1',
+950 silly addNameRange     '1.7.0',
+950 silly addNameRange     '1.8.0',
+950 silly addNameRange     '1.9.0',
+950 silly addNameRange     '1.9.1',
+950 silly addNameRange     '1.10.0',
+950 silly addNameRange     '1.11.0',
+950 silly addNameRange     '1.12.0',
+950 silly addNameRange     '1.13.0',
+950 silly addNameRange     '1.14.0',
+950 silly addNameRange     '1.15.0',
+950 silly addNameRange     '1.16.0',
+950 silly addNameRange     '1.17.0',
+950 silly addNameRange     '1.18.0',
+950 silly addNameRange     '1.19.0',
+950 silly addNameRange     '1.20.0' ] ]
+951 silly addNamed mime-db@1.19.0
+952 verbose addNamed "1.19.0" is a plain semver version for mime-db
+953 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits/package.json
+954 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses/package.json
+955 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits/package.json
+956 silly install resolved []
+957 verbose about to build /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+958 info build /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+959 silly install resolved []
+960 verbose about to build /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+961 info build /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+962 info linkStuff statuses@1.2.1
+963 silly linkStuff statuses@1.2.1 has /home/ayoub/africannonce/node_modules/http-errors/node_modules as its parent node_modules
+964 info linkStuff inherits@2.0.1
+965 silly linkStuff inherits@2.0.1 has /home/ayoub/africannonce/node_modules/http-errors/node_modules as its parent node_modules
+966 silly cache afterAdd mime-db@1.19.0
+967 verbose afterAdd /home/ayoub/.npm/mime-db/1.19.0/package/package.json not in flight; writing
+968 verbose linkBins statuses@1.2.1
+969 verbose linkMans statuses@1.2.1
+970 verbose rebuildBundles statuses@1.2.1
+971 info install statuses@1.2.1
+972 info postinstall statuses@1.2.1
+973 verbose linkBins inherits@2.0.1
+974 verbose linkMans inherits@2.0.1
+975 verbose rebuildBundles inherits@2.0.1
+976 verbose afterAdd /home/ayoub/.npm/mime-db/1.19.0/package/package.json written
+977 silly install resolved [ { name: 'mime-db',
+977 silly install resolved     description: 'Media Type Database',
+977 silly install resolved     version: '1.19.0',
+977 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+977 silly install resolved     license: 'MIT',
+977 silly install resolved     keywords: [ 'mime', 'db', 'type', 'types', 'database', 'charset', 'charsets' ],
+977 silly install resolved     repository:
+977 silly install resolved      { type: 'git',
+977 silly install resolved        url: 'git+https://github.com/jshttp/mime-db.git' },
+977 silly install resolved     devDependencies:
+977 silly install resolved      { bluebird: '2.10.0',
+977 silly install resolved        co: '4.6.0',
+977 silly install resolved        cogent: '1.0.1',
+977 silly install resolved        'csv-parse': '1.0.0',
+977 silly install resolved        gnode: '0.1.1',
+977 silly install resolved        istanbul: '0.3.20',
+977 silly install resolved        mocha: '1.21.5',
+977 silly install resolved        'raw-body': '2.1.3',
+977 silly install resolved        'stream-to-array': '2' },
+977 silly install resolved     files: [ 'HISTORY.md', 'LICENSE', 'README.md', 'db.json', 'index.js' ],
+977 silly install resolved     engines: { node: '>= 0.6' },
+977 silly install resolved     scripts:
+977 silly install resolved      { build: 'node scripts/build',
+977 silly install resolved        fetch: 'gnode scripts/fetch-apache && gnode scripts/fetch-iana && gnode scripts/fetch-nginx',
+977 silly install resolved        test: 'mocha --reporter spec --bail --check-leaks test/',
+977 silly install resolved        'test-cov': 'istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot --check-leaks test/',
+977 silly install resolved        'test-travis': 'istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter spec --check-leaks test/',
+977 silly install resolved        update: 'npm run fetch && npm run build' },
+977 silly install resolved     gitHead: '46a40f0524a01fb3075a7ecde92e8e04fc93d599',
+977 silly install resolved     bugs: { url: 'https://github.com/jshttp/mime-db/issues' },
+977 silly install resolved     homepage: 'https://github.com/jshttp/mime-db',
+977 silly install resolved     _id: 'mime-db@1.19.0',
+977 silly install resolved     _shasum: '496a18198a7ce8244534e25bb102b74fb420fd56',
+977 silly install resolved     _from: 'mime-db@>=1.19.0 <1.20.0',
+977 silly install resolved     _npmVersion: '1.4.28',
+977 silly install resolved     _npmUser: { name: 'dougwilson', email: 'doug@somethingdoug.com' },
+977 silly install resolved     maintainers: [ [Object], [Object] ],
+977 silly install resolved     dist:
+977 silly install resolved      { shasum: '496a18198a7ce8244534e25bb102b74fb420fd56',
+977 silly install resolved        tarball: 'http://registry.npmjs.org/mime-db/-/mime-db-1.19.0.tgz' },
+977 silly install resolved     directories: {},
+977 silly install resolved     _resolved: 'https://registry.npmjs.org/mime-db/-/mime-db-1.19.0.tgz',
+977 silly install resolved     readme: 'ERROR: No README data found!' } ]
+978 info install mime-db@1.19.0 into /home/ayoub/africannonce/node_modules/mime-types
+979 info installOne mime-db@1.19.0
+980 verbose installOne of mime-db to /home/ayoub/africannonce/node_modules/mime-types not in flight; installing
+981 info install inherits@2.0.1
+982 verbose unlock done using /home/ayoub/.npm/_locks/statuses-afac7669253f986b.lock for /home/ayoub/africannonce/node_modules/http-errors/node_modules/statuses
+983 verbose lock using /home/ayoub/.npm/_locks/mime-db-02bd0cf9f8b4c860.lock for /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+984 info postinstall inherits@2.0.1
+985 silly install write writing mime-db 1.19.0 to /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+986 verbose unlock done using /home/ayoub/.npm/_locks/inherits-4ee3800b3b9d436c.lock for /home/ayoub/africannonce/node_modules/http-errors/node_modules/inherits
+987 verbose about to build /home/ayoub/africannonce/node_modules/http-errors
+988 info build /home/ayoub/africannonce/node_modules/http-errors
+989 verbose unbuild node_modules/mime-types/node_modules/mime-db
+990 silly gentlyRm /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db is being purged from base /home/ayoub/africannonce
+991 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+992 info linkStuff http-errors@1.3.1
+993 silly linkStuff http-errors@1.3.1 has /home/ayoub/africannonce/node_modules as its parent node_modules
+994 verbose tar unpack /home/ayoub/.npm/mime-db/1.19.0/package.tgz
+995 verbose tar unpacking to /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+996 silly gentlyRm /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db is being purged
+997 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+998 silly gunzTarPerm modes [ '775', '664' ]
+999 verbose linkBins http-errors@1.3.1
+1000 verbose linkMans http-errors@1.3.1
+1001 verbose rebuildBundles http-errors@1.3.1
+1002 verbose rebuildBundles [ 'inherits', 'statuses' ]
+1003 info install http-errors@1.3.1
+1004 info postinstall http-errors@1.3.1
+1005 verbose unlock done using /home/ayoub/.npm/_locks/http-errors-a176ba202f05c860.lock for /home/ayoub/africannonce/node_modules/http-errors
+1006 verbose write writing to /home/ayoub/africannonce/node_modules/ng-file-upload/package.json
+1007 info preinstall ng-file-upload@10.0.2
+1008 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/ng-file-upload/package.json
+1009 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/ng-file-upload/package.json
+1010 silly gunzTarPerm extractEntry package.json
+1011 silly gunzTarPerm modified mode [ 'package.json', 438, 436 ]
+1012 silly install resolved []
+1013 verbose about to build /home/ayoub/africannonce/node_modules/ng-file-upload
+1014 info build /home/ayoub/africannonce/node_modules/ng-file-upload
+1015 silly gunzTarPerm extractEntry README.md
+1016 silly gunzTarPerm modified mode [ 'README.md', 438, 436 ]
+1017 silly gunzTarPerm extractEntry LICENSE
+1018 silly gunzTarPerm modified mode [ 'LICENSE', 438, 436 ]
+1019 info linkStuff ng-file-upload@10.0.2
+1020 silly linkStuff ng-file-upload@10.0.2 has /home/ayoub/africannonce/node_modules as its parent node_modules
+1021 silly gunzTarPerm extractEntry index.js
+1022 silly gunzTarPerm modified mode [ 'index.js', 438, 436 ]
+1023 silly gunzTarPerm extractEntry HISTORY.md
+1024 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 436 ]
+1025 silly gunzTarPerm extractEntry db.json
+1026 silly gunzTarPerm modified mode [ 'db.json', 438, 436 ]
+1027 verbose linkBins ng-file-upload@10.0.2
+1028 verbose linkMans ng-file-upload@10.0.2
+1029 verbose rebuildBundles ng-file-upload@10.0.2
+1030 info install ng-file-upload@10.0.2
+1031 info postinstall ng-file-upload@10.0.2
+1032 verbose unlock done using /home/ayoub/.npm/_locks/ng-file-upload-810edcb43ecf537d.lock for /home/ayoub/africannonce/node_modules/ng-file-upload
+1033 verbose write writing to /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db/package.json
+1034 info preinstall mime-db@1.19.0
+1035 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db/package.json
+1036 verbose readDependencies loading dependencies from /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db/package.json
+1037 silly install resolved []
+1038 verbose about to build /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+1039 info build /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+1040 info linkStuff mime-db@1.19.0
+1041 silly linkStuff mime-db@1.19.0 has /home/ayoub/africannonce/node_modules/mime-types/node_modules as its parent node_modules
+1042 verbose linkBins mime-db@1.19.0
+1043 verbose linkMans mime-db@1.19.0
+1044 verbose rebuildBundles mime-db@1.19.0
+1045 info install mime-db@1.19.0
+1046 info postinstall mime-db@1.19.0
+1047 verbose unlock done using /home/ayoub/.npm/_locks/mime-db-02bd0cf9f8b4c860.lock for /home/ayoub/africannonce/node_modules/mime-types/node_modules/mime-db
+1048 verbose about to build /home/ayoub/africannonce/node_modules/mime-types
+1049 info build /home/ayoub/africannonce/node_modules/mime-types
+1050 info linkStuff mime-types@2.1.7
+1051 silly linkStuff mime-types@2.1.7 has /home/ayoub/africannonce/node_modules as its parent node_modules
+1052 verbose linkBins mime-types@2.1.7
+1053 verbose linkMans mime-types@2.1.7
+1054 verbose rebuildBundles mime-types@2.1.7
+1055 verbose rebuildBundles [ 'mime-db' ]
+1056 info install mime-types@2.1.7
+1057 info postinstall mime-types@2.1.7
+1058 verbose unlock done using /home/ayoub/.npm/_locks/mime-types-b8b7d05900297a33.lock for /home/ayoub/africannonce/node_modules/mime-types
+1059 info build /home/ayoub/africannonce
+1060 info linkStuff AFRIQUE_ANNONCE@0.0.9
+1061 silly linkStuff AFRIQUE_ANNONCE@0.0.9 has /home/ayoub as its parent node_modules
+1062 verbose linkBins AFRIQUE_ANNONCE@0.0.9
+1063 verbose linkMans AFRIQUE_ANNONCE@0.0.9
+1064 verbose rebuildBundles AFRIQUE_ANNONCE@0.0.9
+1065 verbose rebuildBundles [ '.bin',
+1065 verbose rebuildBundles   'async',
+1065 verbose rebuildBundles   'body-parser',
+1065 verbose rebuildBundles   'compression',
+1065 verbose rebuildBundles   'connect-busboy',
+1065 verbose rebuildBundles   'connect-flash',
+1065 verbose rebuildBundles   'connect-mongo',
+1065 verbose rebuildBundles   'cookie-parser',
+1065 verbose rebuildBundles   'debug',
+1065 verbose rebuildBundles   'ejs',
+1065 verbose rebuildBundles   'errorhandler',
+1065 verbose rebuildBundles   'escape-html',
+1065 verbose rebuildBundles   'express',
+1065 verbose rebuildBundles   'express-domain-middleware',
+1065 verbose rebuildBundles   'express-fileupload',
+1065 verbose rebuildBundles   'express-session',
+1065 verbose rebuildBundles   'express-validator',
+1065 verbose rebuildBundles   'fs',
+1065 verbose rebuildBundles   'helmet',
+1065 verbose rebuildBundles   'http-errors',
+1065 verbose rebuildBundles   'method-override',
+1065 verbose rebuildBundles   'mime',
+1065 verbose rebuildBundles   'mime-types',
+1065 verbose rebuildBundles   'mongoose',
+1065 verbose rebuildBundles   'morgan',
+1065 verbose rebuildBundles   'multer',
+1065 verbose rebuildBundles   'negotiator',
+1065 verbose rebuildBundles   'ng-file-upload',
+1065 verbose rebuildBundles   'node-restful',
+1065 verbose rebuildBundles   'passport',
+1065 verbose rebuildBundles   'passport-facebook',
+1065 verbose rebuildBundles   'passport-google-oauth',
+1065 verbose rebuildBundles   'passport-local',
+1065 verbose rebuildBundles   'passport-twitter',
+1065 verbose rebuildBundles   'serve-index',
+1065 verbose rebuildBundles   'socket.io',
+1065 verbose rebuildBundles   'uid2' ]
+1066 verbose rebuild bundle /home/ayoub/africannonce/node_modules/mime
+1067 info build /home/ayoub/africannonce/node_modules/mime
+1068 info preinstall mime@1.3.4
+1069 info linkStuff mime@1.3.4
+1070 silly linkStuff mime@1.3.4 has /home/ayoub/africannonce/node_modules as its parent node_modules
+1071 verbose linkBins mime@1.3.4
+1072 verbose link bins [ { mime: 'cli.js' },
+1072 verbose link bins   '/home/ayoub/africannonce/node_modules/.bin',
+1072 verbose link bins   false ]
+1073 verbose linkMans mime@1.3.4
+1074 verbose rebuildBundles mime@1.3.4
+1075 silly gentlyRm /home/ayoub/africannonce/node_modules/.bin/mime is being purged
+1076 verbose gentlyRm don't care about contents; nuking /home/ayoub/africannonce/node_modules/.bin/mime
+1077 silly vacuum-fs purging /home/ayoub/africannonce/node_modules/.bin/mime
+1078 silly vacuum-fs removing /home/ayoub/africannonce/node_modules/.bin
+1079 silly vacuum-fs quitting because other entries in /home/ayoub/africannonce/node_modules
+1080 info install mime@1.3.4
+1081 info postinstall mime@1.3.4
+1082 verbose rebuild bundle /home/ayoub/africannonce/node_modules/node-restful
+1083 info build /home/ayoub/africannonce/node_modules/node-restful
+1084 info preinstall node-restful@0.2.2
+1085 info linkStuff node-restful@0.2.2
+1086 silly linkStuff node-restful@0.2.2 has /home/ayoub/africannonce/node_modules as its parent node_modules
+1087 verbose linkBins node-restful@0.2.2
+1088 verbose linkMans node-restful@0.2.2
+1089 verbose rebuildBundles node-restful@0.2.2
+1090 verbose rebuildBundles [ 'underscore' ]
+1091 info install node-restful@0.2.2
+1092 info postinstall node-restful@0.2.2
+1093 verbose rebuild bundle /home/ayoub/africannonce/node_modules/uid2
+1094 info build /home/ayoub/africannonce/node_modules/uid2
+1095 info preinstall uid2@0.0.3
+1096 info linkStuff uid2@0.0.3
+1097 silly linkStuff uid2@0.0.3 has /home/ayoub/africannonce/node_modules as its parent node_modules
+1098 verbose linkBins uid2@0.0.3
+1099 verbose linkMans uid2@0.0.3
+1100 verbose rebuildBundles uid2@0.0.3
+1101 info install uid2@0.0.3
+1102 info postinstall uid2@0.0.3
+1103 info install AFRIQUE_ANNONCE@0.0.9
+1104 info postinstall AFRIQUE_ANNONCE@0.0.9
+1105 info prepublish AFRIQUE_ANNONCE@0.0.9
+1106 verbose validateInstall loading /home/ayoub/africannonce/package.json for validation
+1107 verbose stack Error: The package mongoose@3.8.36 does not satisfy its siblings' peerDependencies requirements!
+1107 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:125:32
+1107 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:268:7
+1107 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+1107 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1107 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1107 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1107 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1107 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1107 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+1107 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+1108 verbose cwd /home/ayoub/africannonce
+1109 error Linux 3.19.0-30-generic
+1110 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+1111 error node v4.1.2
+1112 error npm  v2.14.4
+1113 error code EPEERINVALID
+1114 error peerinvalid The package mongoose@3.8.36 does not satisfy its siblings' peerDependencies requirements!
+1114 error peerinvalid Peer node-restful@0.2.2 wants mongoose@~4
+1115 verbose exit [ 1, true ]
